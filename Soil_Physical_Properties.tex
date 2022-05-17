@@ -3,7 +3,7 @@
 
 \usepackage[utf8]{inputenc}
 
-\usepackage[a5paper, parfill, inner=1.5cm, outer=1.5cm, top=1.75cm, bottom=1.5cm]{geometry} % this will be half an A4
+\usepackage[a5paper, parfill, inner=1.5cm, outer=1.5cm, top=1.75cm, bottom=1.5cm]{geometry} % this will be half an A4 and is better presented on smartphones
 
 \usepackage{amsmath} % provides miscellaneous enhancements for improving the information structure and printed output of documents containing mathematical formulas 
 
@@ -248,12 +248,12 @@ Lenticular type structure is overlapping, lens-shaped peds that are  generally p
 
 Platy type structure are flat plate like units that are wider than tall.
 
-\begin{figure*}
+\begin{figure}
     \centering
     \includegraphics[width=0.8\columnwidth]{images/FieldBookVer3_ExamplesSoilStructureTypes1045x1145.png}
     \caption{Types of Soil Structure. From Soil Survey Staff 2012 Field Book for Describing and Sampling Soils version 3.}
     \label{fig:SoilStructureTypes}
-\end{figure*}
+\end{figure}
 
 \subsection{Grade of Structure}
     
@@ -265,11 +265,13 @@ Three grades of structure are described.
     \item \textbf{\emph{Strong}}: Most of the soil mass is visible as beds, moist of which can be handled with ease without breaking.
 \end{itemize}
 
-Soil structure may exist as a compound structure in which large peds may further fall apart into smaller blocks or smaller peds. Both are described starting with the larger type the term "parting to" and then the smaller type add to the description.
+Soil structure may exist as a compound structure in which large peds may further fall apart into smaller blocks or smaller peds. Both are described starting with the larger type the term "parting to" and then the smaller type added to the description.
     
 \subsection{Size of Structure}
     
 Size is conveyed in such a way that the peds narrowest dimension  determines the size class for each type. Size classes for granular, angular blocky, sub-angular blocky, lenticular, wedge, prismatic, and columnar structure types are \emph{very fine}, \emph{fine}, \emph{medium}, \emph{coarse}, and \emph{very coarse}. For the platy structure type thin is substituted for fine and thick is substituted for coarse size class names.
+
+% the following Structure size class table does not translate to html via pandoc well. Consider revising or presenting in another form.
 
 \begin{table}[!htbp]
 \label{tab:astructuresizeclass}
@@ -292,7 +294,6 @@ Size is conveyed in such a way that the peds narrowest dimension  determines the
     
 Increasing sodium tends to speed structure degradation. The sodium interacts with the soil particles promoting dispersion. Dispersed size separates are frequently in clay size class and greatly diminish the movement of water and this limits the removal of salts. Tillage also destroys structure and though it can temporarily fluff up the size separates it tends to promote the decomposition of organic matter and the organic matter, as stated previously, is an aggregating agent that promotes structure stability. Trafficking by animals and machinery also have a negative impact on soil structure.
     
-
 \section{Density}
     
 Solids Density $\left(\rho_s\right)$ is the density of the solid soil particles only in units of mass per volume e.g., $\left(\frac{g}{cm^3}\right)$. Often in texts the greek letter rho  is a shorthand symbol for density and s is for solids.
@@ -301,7 +302,134 @@ Solids Density $\left(\rho_s\right)$ is the density of the solid soil particles 
     Particle\,Density = \left(\frac{Weight\,of\,Solids}{Volume\,of\,Solids}\right)   
 \end{equation}
 
-Expressed in a maths form $\rho_p = {W_s \over V_s}$ where $\rho$ is density, $p$ is particle, $W$ is weight, $V$ is volume, and $s$ is solid.
+Expressed in a maths form $\rho_p =\frac{W_s}{V_s}$ where $\rho$ is density, $p$ is particle, $W$ is weight, $V$ is volume, and $s$ is solid.
+
+Range of particle density values for typical soil materials varies with inorganic materials ranging from $2.6 \text{to} 2.75 g\,cm^{-3}$.
+
+For inorganic materials $\rho_s$ is  (Al = 27 g/mole; Si = 28 g/mole; and Fe = 56 g/mole). For organic materials $\rho_s$ is  (C =12 g/mole; O = 16 g/mole; and H = 1 g/mole).
+
+The $\rho_s$ is affected by the kind of minerals or rock (e.g., iron is heavier than aluminum) and the proportion of organic matter to mineral (inorganic) material.
+
+The $\rho_s$ is not affected by texture or soil structure (arrangement of soil solids).
+
+Bulk Density $\left(\rho_b\right)$ is a measure of the weight of the soil per unit volume . Volume includes both solids and pore space. Usually reported as the weight of oven-dry soil following heating to 110\textdegree C.
+
+\begin{equation}
+    Bulk\,Density = \left(\frac{Weight\,of\,Oven\,Dry\,Soil}{Volume\,of\,Soil\,Sampled}\right)
+\end{equation}
+
+For maths treatment:
+
+\begin{equation}
+    \rho_b = \frac{M_s}{V_t}\quad\\
+    \begin{aligned}
+    \text{where:}\\
+        \rho_b &= \text{density bulk} \\
+        M_s &= \text{mass of solids} \\
+        V_t &= \text{volume total} \\
+    \end{aligned}
+\end{equation}
+
+The $\rho_b$ values for most mineral (inorganic) soils are $1.20\,\text{to}\,1.40\,\frac{\text{g}}{\text{cm}^3}$ and for organic soils $0.10\,\text{to}\,0.25\,\frac{\text{g}}{\text{cm}^3}$. Recall that the specific gravity (density) of water, at STP, is $1.00\,\frac{\text{g}}{\text{cm}^3}$.
+
+Bulk Density is affected by:
+\begin{itemize}
+    \item Particle density; $\rho_s$
+    \item Texture because it affects total porosity $\left(\eta\right)$:  $\text{sand}\,\rho_{\text{b}} > \text{clay}\,\rho_{\text{b}}$
+    \item Soil structure because it affects porosity $\left(\eta\right)$; $\uparrow$  structure generally $\uparrow\,\eta$
+    \item Concentration of organic matter – affects $\rho_s$ and porosity $\left(\eta\right)$
+    \item Cultivation – tends to result in both compaction and destruction of organic matter.
+\end{itemize}
+
+\section{Porosity}
+
+Porosity $\left(\eta\right)$ is the fraction of soil volume occupied by air and water (non-solids). Soil porosities range from 0.30 to 0.60 (or 30\% to 60\%) for most soils.
+
+A maths treatment of porosity is:
+
+\begin{equation}
+    \eta = \frac{\left(V_a + V_w\right)}{\left(V_a + V_w + V_s\right)}
+    \begin{aligned}
+        \text{where:}\\
+        \eta &= \text{porosity (greek letter eta)}\\
+        V_a &= \text{volume of air}\\
+        V_w &= \text{volume of water}\\
+        V_s &= \text{volume of solids}
+    \end{aligned}
+\end{equation}
+
+This can be simplified to:
+
+\begin{equation}
+    \eta = \frac{V_v}{V_t}
+    \begin{aligned}
+        \text{where:}\\
+        \eta &= \text{porosity}\\
+        V_v &= \text{volume of the voids}:\,V_a+V_w\\
+        V_t &= \text{volume total}:\,V_a+V_w+Vs
+    \end{aligned}
+\end{equation}
+
+It can be challenging to determine the $V_v$ when the relative proportions of $V_a$ and $V_w$ are unknown. When $V_a = 0$ the soil is saturated. Saturating a known total volume $\left(V_t\right)$  such as a core extracted from a soil and massing the saturated soil is useful because the density of water, its specific gravity, is know to be $1\,g\,cm^{-3}$. Since $V_a=0$ then $V_w=V_v$. The same sample can then have the water driven off by heating in a 110\textdegree C oven until it no longer reduces in mass and the difference in mass equates to a volume of voids $\left(V_v\right)$ that the water occupied. This is useful because the particle density does not have to be measured.
+
+Another estimate of porosity can be derived if the average solids density $\left(\rho_s\right)$ is known or estimated. Estimation of average solids density is frequently employed as a first estimate. Estimating average solids density is guided by empirical evidence and assumption that the dominate soil minerals might be quartz, feldspars, micas, and secondary clays. The solids density of $2.65\,g\,cm^{-3}$ is most frequently adopted when the average solids density is not measured.
+
+The quotient of bulk density $\left(\rho_b\right)$ to solids density $\left(\rho_s\right)$ for soil should always be a value less than one and represents the fraction of the whole soil that is occupied by the solids. When subtracted from the whole the quotient of bulk density to solids density will yield the fraction of the whole soil that is voids.
+
+\begin{equation}
+    \eta =\left(1-\frac{\rho_{\text{b}}}{\rho_{\text{s}}}\right)
+    \begin{aligned}
+        \text{where:}\\
+        \eta &= \text{porosity or void fraction of the whole }\\
+        \rho_b &= \text{density of bulk soil}\\
+        \rho_s &= \text{density of solids}\\
+        1 &= \text{the whole}
+    \end{aligned}
+\end{equation}
+
+Porosity as a percent:
+
+\begin{equation}
+    \%\,\eta =\left(1-\frac{\rho_{\text{b}}}{\rho_{\text{s}}}\right) \times 100
+    \begin{aligned}
+        \text{where:}\\
+        \eta &= \text{porosity or void fraction of the whole }\\
+        \rho_b &= \text{density of bulk soil}\\
+        \rho_s &= \text{density of solids}\\
+        1 &= \text{the whole}
+    \end{aligned}
+\end{equation}
+
+Example:
+
+What is the percent porosity of a soil where $\rho_b = \frac{1.80\,g}{cm^3}$ and $\rho_s = \frac{2.65\,g}{cm^3}$ ? $\%\,\eta = 32$
+
+porosity varies with texture, structure, and bulk density. Soils with more clay tend to have greater porosity than soils where sands dominate the size separates. The pores that arise owing to the size and irregular shape of the soils size separates are called \textbf{matrix pores}. The aggregation of the size separates that favor the repeating planes of separation between the peds and the orientation of the aggregates that result in the larger pores. The resulting repeating planes of separation tend to increase porosity. These pores between peds together with burrowing arthropods, abandoned root channels, and voids caused by entrapped gasses by water movement are called \textbf{nonmatrix pores}. nonmatrix pores are generally larger in cross section than matrix pores.
+
+Porosity and bulk density are inversely related and can be related with maths as:
+
+\begin{equation}
+    \eta \, \frac{1}{\propto} \, \rho_b
+    \begin{aligned}
+        \text{where:}\\
+        \eta &= \text{porosity or void fraction of the whole }\\
+        \rho_b &= \text{density of bulk soil}\\
+        \propto &= \text{proportional to}\\
+        \frac{1}{\propto} &= \text{inversely proportional to}
+    \end{aligned}
+\end{equation}
+
+Decreasing bulk density promotes porosity. The pores are the voids between the solids that can contain air and or water. Biologicals in the soil rely on water stored there and aerobic organisms rely of the air composition.
+
+
+Though the porosity is generally greater in a clay soil than a sand soil, the average cross-section of sandy soil matrix pores are generally greater than the average cross-section of clay soils. Thus, water and air flow more rapidly through sandy soils and more slowly through soils high in clay. This is owing to the interaction of these fluids and the solids. \textit{For more on fluid interaction with solids seek a the treatment of water in soils.}
+
+When discussing nonmatrix pores it is frequently useful to group pores by pore diameter where macropores are larger pores with a diameter greater than 0.08 mm and micropores having a diameter less than 0.08 mm. The use of pore diameter is useful because water and air move relatively rapidly through macropores and much slower through micropores. 
+
+The matrix pores of sandy soils are dominated mainly macropores. Clay soils have mainly micropores. Thus, water and air flow rapidly through sandy soils and slowly through soils high in clay.
+
+Pores can also be grouped into three general types. Interparticle pores are the spaces occurring between the individual soil particles. Interaggregate pores are the space occurring between soil aggregates. Biopores are pores created by biological activity (e.g., roots and earthworms).
+
 
 \section{Soil Color}
     
