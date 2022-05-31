@@ -3,11 +3,11 @@
 
 \usepackage[utf8]{inputenc}
 
-\usepackage[a5paper, parfill, inner=1.5cm, outer=1.5cm, top=1.75cm, bottom=1.5cm]{geometry} % this will be half an A4 and is better presented on smartphones
+\usepackage[a5paper, inner=1.5cm, outer=1.5cm, top=1.75cm, bottom=1.5cm]{geometry} % this will be half an A4 and is better presented on smartphones
 
 \usepackage{amsmath} % provides miscellaneous enhancements for improving the information structure and printed output of documents containing mathematical formulas 
 
-\usepackage{amsfonts,amssymb} % amssymb provides an extended symbol collection and internally loads amsfonts
+\usepackage{amsfonts,amssymb} % amssymb provides an extended symbol collection and internally loads amsfonts Computer Modern font plus a set of miscellaneous TeX fonts that augment the standard Computer Modern set
 
 \usepackage{graphicx} % show images
 
@@ -16,6 +16,8 @@
 \usepackage{array}
 
 \graphicspath{ {images/} } % Path relative to the .tex file containing the \includegraphics command
+
+\usepackage{siunitx}
 
 % begin itemize and enumerate formatting
 \usepackage{enumitem} % Control layout of itemize, enumerate, description
@@ -40,7 +42,9 @@
 
 \maketitle
 
-Descriptions of the physical properties of soil include size separates, organization of size separates, density, porosity, consistency, color, and temperature.
+% TODO Add introductory section.
+
+Descriptions of the physical properties of soil include size separates, organization of size separates, density, voids or porosity, consistency, color, and temperature.
     
 \section{Organic Soil}
 \label{organic_soil}
@@ -67,27 +71,27 @@ Separates are the individual particles that together with organics, salts, and e
     
 First, the standard is determination based on only the mineral fraction. Organics, salts, and evaporites are not included as part of the whole.
     
-Second, we group the separates of the “whole” soil into two classes, the coarse fraction (CF) and the fine-earth fraction. The coarse fraction consists of the particles greater than 2~mm in diameter and the fine-earth fraction consist of particles equal to and less than 2~mm.
+Second, we group the separates of the “whole” soil into two classes, the coarse fraction (CF) and the fine-earth fraction. The coarse fraction consists of the particles greater than \SI{2}{\milli\metre} in diameter and the fine-earth fraction consist of particles equal to and less than \SI{2}{\milli\metre}.
     
 Both the coarse fraction and fine-earth fraction are further divided, again, on the basis of size. The fine-earth fraction is divided first into three size separates: sand, silt, and clay.
     
-Coarse Fraction are separates greater in diameter than 2~mm.
+Coarse Fraction are separates greater in diameter than \SI{2}{\milli\metre}.
     
-Fine-Earth Fraction are separates less than or equal to 2~mm.
+Fine-Earth Fraction are separates less than or equal to \SI{2}{\milli\metre}.
     
-Coarse fragments, or the coarse fraction, are important to consider because they occupy space in the soil, but contribute little or no porosity (water storage) and chemical reactivity (nutrient storage). Thus, coarse fragments reduce the soil volume available to hold water and nutrients. Coarse fragments may also make cultivation difficult.
+Coarse fragments, or the coarse fraction, are important to consider because they occupy space in the soil, but contribute little or no voids (water and air storage) and chemical reactivity (nutrient storage). Thus, coarse fragments reduce the soil volume available to hold water and nutrients. Coarse fragments may also make cultivation difficult.
 
 \subsection{Soil Texture}
     
-Soil texture refers to the proportion groupings of size separates in the inorganic soil fine earth fraction (\textless 2-mm in diameter). There are generally three groupings with further divisions of the three to achieve more refined interpretive relevance. Texture can generally not be changed, except at great expense (example: adding sand to your garden). The three groupings of the fine earth fraction are sand, silt, and clay.
+Soil texture refers to the proportion groupings of size separates in the inorganic soil fine earth fraction (\textless \SI{2}{\milli\metre} in diameter). There are generally three groupings with further divisions of the three to achieve more refined interpretive relevance. Texture can generally not be changed, except at great expense (example: adding sand to your garden). The three groupings of the fine earth fraction are sand, silt, and clay.
     
-The sands are the separates between 0.05 to 2~mm.
+The sands are the separates between \SI{0.05}{} to \SI{2}{\milli\metre}.
 
-The sand size separates are further classed into five size classes. \emph{Very Course Sand} separates are from 2~mm to 1~mm diameter. \emph{Course Sand} separates are from 1~mm to 0.5~mm diameter. \emph{Medium Sand} separates is from 0.5~mm to 0.25~mm diameter. \emph{Fine Sand} separates is from 0.25~mm to 0.10~mm diameter. \emph{Very Fine Sand} separates is from 0.01 to 0.05~mm diameter.
+The sand size separates are further classed into five size classes. \emph{Very Course Sand} separates are from \SI{2}{\milli\metre} to \SI{1}{\milli\metre} diameter. \emph{Course Sand} separates are from \SI{1}{\milli\metre} to \SI{0.5}{\milli\metre} diameter. \emph{Medium Sand} separates is from \SI{0.5}{\milli\metre} to \SI{0.25}{\milli\metre} diameter. \emph{Fine Sand} separates is from \SI{0.25}{\milli\metre} to \SI{0.10}{\milli\metre} diameter. \emph{Very Fine Sand} separates is from \SI{0.10}{\milli\metre} to \SI{0.05}{\milli\metre} diameter.
     
-Silt are separates are between the diameters of 0.002 – 0.05 mm or 2 – 50 \textmu m, where \textmu\, is micro.
+Silt are separates are between the diameters of \SI{0.002}{} – \SI{0.05}{\milli\metre} or \SI{2}{} – \SI{50}{\micro\metre}, where $\mu$, is micro.
 
-Clay are separates with diameters of \textless\,0.002 mm or \textless\,2 \textmu m.
+Clay are separates with diameters of \SI{0.002}{\milli\metre} or \SI{2}{\micro\metre}.
 
 \subsection{Textural Triangle}
     
@@ -97,7 +101,9 @@ Sand, Loamy Sand, Sandy Loam, Sandy Clay Loam, Silt, Silt Loam, Silty Clay Loam,
     
 It is important to note that the sand, silt, and clay mass proportions represented as a percent of the fine earth fraction add up to 100 percent. Organic matter and course fraction is not included when determining the textural class.
     
+\begin{center}
 Sand\% + Silt\% + Clay\% = 100\%
+\end{center}
     
 \begin{figure*}
     \centering
@@ -106,9 +112,9 @@ Sand\% + Silt\% + Clay\% = 100\%
     \label{fig:TexturalTriangle}
 \end{figure*}
     
-Loam is a soil textural class in which the sand, silt and clay fractions have a similar influence on soil properties.
+Loam is a soil textural class in which the sand, silt and clay fractions have a similar influence on soil properties, but are not in equal proportions.
     
-The textural class can be further subdivided. This usually based upon sand distribution e.g. Loamy Very Fine Sand.
+The textural class can be further subdivided. This usually based upon sand distribution e.g. Loamy \textbf{Very Fine} Sand.
     
 The textural class name has a coarse fraction modifier added when the coarse fraction exceeds 15\% of the soil horizons volume.
     
@@ -134,7 +140,7 @@ Laboratory procedures to determine the actual textural class begins by separatio
 
 Pretreatments to the 2~mm and smaller mineral fraction enhance separation of the size separates. Coarser organic matter is removed and the humus fraction of organic matter is oxidized with hydrogen peroxide. Salts can be removed by passing water through the soil. Carbonates can be evolved with a weak acid such as glacial acetic acid and mild heat. Iron can be reduced and chelated for removal.
 
-The remaining 2~mm and smaller mineral fraction separates are then dispersed with sodium hexametaphosphate with mixing and the 2000 to 50 \textmu m sands are separated by sieving from the $\leq$ 50 \textmu m separates silt and clay, fraction. Sampling an aliquot of the suspension at a specified depth via a pipette to isolate the $\leq$ 2 \textmu m clay follows dispersion and sedimentation.
+The remaining \SI{2}{\milli\metre} and smaller mineral fraction separates are then dispersed with sodium hexametaphosphate with mixing and the \SI{2000}{} to \SI{50}{\micro\metre} sands are separated by sieving from the $\leq$ \SI{50}{\micro\metre} separates silt and clay, fraction. Sampling an aliquot of the suspension at a specified depth via a pipette to isolate the $\leq$ \SI{2}{\micro\metre} clay follows dispersion and sedimentation.
 
 Such pipette sampling is considered to be the “platinum standard” for textural analysis.
 
@@ -230,7 +236,7 @@ Soils can be structureless expressing a single grain or cohesive nature. Cohesiv
     
 \textbf{Nodules} and \textbf{concretions} are two other arrangements encountered that have formed in soils and while both are cemented spherical bodies without obvious crystals the concretions display layering whereas nodules do not.
     
-Structure influences water movement, heat transfer, aeration, porosity, and erosion as a secondary influence to the overarching constraints and influences arising due to the soil texture. Unlike soil texture, however, soil structure can be changed by management practices.
+Structure influences water movement, heat transfer, aeration, voids distribution, and erosion as a secondary influence to the overarching constraints and influences arising due to the soil texture. Unlike soil texture, however, soil structure can be changed by management practices.
     
 Soil structure is observed, measured, and recorded in-situ as \textbf{Type}, \textbf{Grade}, and \textbf{Size}.
     
@@ -242,7 +248,7 @@ The prismatic and columnar type structure are taller than wide with the prismati
 
 Granular and blocky structural types are roughly equidistant side to sided and top to bottom. Granular are polyhedral with irregular faces that are difficult to imagine a clear nesting faces with their neighbors. Blocky structures planar faces are discernible as nesting with neighboring blocks. Angular describes blocky structure type with sharp angular faces versus the subangular blocky polyhedrals wherein the planar faces lack sharp angles and are subrounded.
 
-Wedge type structure is elliptical and terminate at acute angles, often 30\textdegree\, or 60\textdegree, with slickenside bounding edges. While the wedge structure type does not require the soil be a U.S. Soil Taxonomy Vertisol Order, the Vertisol Order, and Vertic taxonomic subgroups must include wedge type structure.
+Wedge type structure is elliptical and terminate at acute angles, often $30^{\circ}$, or $60^{\circ}$, with slickenside bounding edges. While the wedge structure type does not require the soil be a U.S. Soil Taxonomy Vertisol Order, the Vertisol Order, and Vertic taxonomic subgroups must include wedge type structure.
 
 Lenticular type structure is overlapping, lens-shaped peds that are  generally parallel to the soil surface that are thick at the center and taper toward the edges and are formed by active or relict periglacial frost processes. Most common in soils with moderate to high water-holding capacity in moist conditions.
 
@@ -271,7 +277,7 @@ Soil structure may exist as a compound structure in which large peds may further
     
 Size is conveyed in such a way that the peds narrowest dimension  determines the size class for each type. Size classes for granular, angular blocky, sub-angular blocky, lenticular, wedge, prismatic, and columnar structure types are \emph{very fine}, \emph{fine}, \emph{medium}, \emph{coarse}, and \emph{very coarse}. For the platy structure type thin is substituted for fine and thick is substituted for coarse size class names.
 
-% the following Structure size class table does not translate to html via pandoc well. Consider revising or presenting in another form.
+% TODO Revise or Exclude Structure size class table. It does not translate to html via pandoc well. Consider revising or presenting in another form.
 
 \begin{table}[!htbp]
 \label{tab:astructuresizeclass}
@@ -312,7 +318,7 @@ The $\rho_s$ is affected by the kind of minerals or rock (e.g., iron is heavier 
 
 The $\rho_s$ is not affected by texture or soil structure (arrangement of soil solids).
 
-Bulk Density $\left(\rho_b\right)$ is a measure of the weight of the soil per unit volume . Volume includes both solids and pore space. Usually reported as the weight of oven-dry soil following heating to 110\textdegree C.
+Bulk Density $\left(\rho_b\right)$ is a measure of the weight of the soil per unit volume. Volume includes both solids and pore space. Usually reported as the weight of oven-dry soil following heating to $\SI{110}{\degreeCelsius}$.
 
 \begin{equation}
     Bulk\,Density = \left(\frac{Weight\,of\,Oven\,Dry\,Soil}{Volume\,of\,Soil\,Sampled}\right)
@@ -334,12 +340,36 @@ The $\rho_b$ values for most mineral (inorganic) soils are $1.20\,\text{to}\,1.4
 
 Bulk Density is affected by:
 \begin{itemize}
-    \item Particle density; $\rho_s$
-    \item Texture because it affects total porosity $\left(\eta\right)$:  $\text{sand}\,\rho_{\text{b}} > \text{clay}\,\rho_{\text{b}}$
-    \item Soil structure because it affects porosity $\left(\eta\right)$; $\uparrow$  structure generally $\uparrow\,\eta$
+    \item Particle density; $\left(\rho_s\right)$
+    \item Texture because it affects total volume of the voids $\left(V_v\right)$, or porosity $\left(\eta\right)$:  $\text{sand}\,\rho_{\text{b}} > \text{clay}\,\rho_{\text{b}}$
+    \item Soil structure because it also affects porosity $\left(\eta\right)$; $\uparrow$  structure generally $\uparrow\,\eta$
     \item Concentration of organic matter – affects $\rho_s$ and porosity $\left(\eta\right)$
     \item Cultivation – tends to result in both compaction and destruction of organic matter.
 \end{itemize}
+
+\section{Voids}
+
+The voids that arise owing to the size and irregular shape of the soils size separates exist in what can be termed the \textbf{matrix}. Some writings will refer to these as intraaggregate though an a-pedal\textemdash{}structurless\textemdash{}soil matrix includes these type of voids. The aggregation of the size separates that favor the repeating planes of separation between the peds orientated aggregates result in larger diameter voids. The formation of structural units and the resulting repeating planes of separation tend to increase the relative proportion of void to solid.  These voids between peds together with voids created by burrowing arthropods, abandoned root channels, and voids caused by entrapped gasses by water movement can be considered \textbf{nonmatrix voids}. Nonmatrix voids are not only generally larger in cross section than matrix voids, but also can be considered more dynamic in their fluid occupancy: air and/or water.  
+
+% TODO when water and biological texts are written, and if included with this text, the below paragraph can be edited to cite directly.
+
+This fluid occupancy is of particular interest since both air and water contents are of great interest to biologicals. The occupancy of the voids by water is a storage medium that is critical to biologicals. The movement of the water and the solutes in the water is also of import to the biologicals. The storage and movement of water will be discussed in conjunction with biologicals separately in a forthcoming publication. Similarly, a more targeted treatment of water will also be in an additional forthcoming publication.  
+
+It is appropriate, however, to present a classification of voids based on their effective diameter, or size. The basis of the following classification is soil water\textemdash{}plant relationships.  
+
+\textbf{Macrovoids} are \textgreater{} \SI{75}{\micro\metre} and was chosen utilizing empirical data wherein tensions of $\leq$ \SI{40}{\centi\metre} ($\leq$ \SI{-4}{kPa}) led to greater percolation rates. The emptying of macrovoids also leads to air exchange within the soil.  
+
+\textbf{Mesovoids} are \SI{30}{\micro\metre}\textemdash \SI{75}{\micro\metre} are important in transport and distribution of water. Mesovoids together with marcrovoids are contributors to renewal and exchange of air in the soil.  
+
+\textbf{Microvoids} \SI{5}{}\textemdash \SI{30}{\micro\metre} and \textbf{ultramicrovoids} \SI{0.1}{}\textemdash \SI{5}{\micro\metre} are are voids most responsible for storage of water that is available to plants, as the habitat for microorganisims, and soil fauna.  
+
+\textbf{Cryptovoids} \textless{} \SI{0.1}{\micro\metre} represent storage of water that is generally unavailable to most plants. They are generally too small for roots and most microorganisms.  
+
+Void connectivity and tortuous paths between void tubules dictates the relative movement and connectivity of the air and water within the soil. Irregular effective diameters are quite common in soils and impede the filing and emptying of the voids.  
+
+Though a physical property, the distribution of voids among the afore mentioned void classifications as part of the total volume of voids has a meaningful impact on the soil system and the ecological process for which the soil system is so important. Except for the cryptopores the relative proportions of these classes can be impacted by management and soil health practices.  
+
+Of the for voids properties continuity, tortousity, size distribution, and total void volume the total void volume is perhaps most easily measured. A common measurement is porosity.  
 
 \section{Porosity}
 
@@ -370,7 +400,7 @@ This can be simplified to:
     \end{aligned}
 \end{equation}
 
-It can be challenging to determine the $V_v$ when the relative proportions of $V_a$ and $V_w$ are unknown. When $V_a = 0$ the soil is saturated. Saturating a known total volume $\left(V_t\right)$  such as a core extracted from a soil and massing the saturated soil is useful because the density of water, its specific gravity, is know to be $1\,g\,cm^{-3}$. Since $V_a=0$ then $V_w=V_v$. The same sample can then have the water driven off by heating in a 110\textdegree C oven until it no longer reduces in mass and the difference in mass equates to a volume of voids $\left(V_v\right)$ that the water occupied. This is useful because the particle density does not have to be measured.
+It can be challenging to determine the $V_v$ when the relative proportions of $V_a$ and $V_w$ are unknown. When $V_a = 0$ the soil is saturated. Saturating a known total volume $\left(V_t\right)$  such as a core extracted from a soil and massing the saturated soil is useful because the density of water, its specific gravity, is know to be $1\,g\,cm^{-3}$. Since $V_a=0$ then $V_w=V_v$. The same sample can then have the water driven off by heating in a $\SI{110}{\degreeCelsius}$ oven until it no longer reduces in mass and the difference in mass equates to a volume of voids $\left(V_v\right)$ that the water occupied. This is useful because the particle density does not have to be measured.
 
 Another estimate of porosity can be derived if the average solids density $\left(\rho_s\right)$ is known or estimated. Estimation of average solids density is frequently employed as a first estimate. Estimating average solids density is guided by empirical evidence and assumption that the dominate soil minerals might be quartz, feldspars, micas, and secondary clays. The solids density of $2.65\,g\,cm^{-3}$ is most frequently adopted when the average solids density is not measured.
 
@@ -404,7 +434,7 @@ Example:
 
 What is the percent porosity of a soil where $\rho_b = \frac{1.80\,g}{cm^3}$ and $\rho_s = \frac{2.65\,g}{cm^3}$ ? $\%\,\eta = 32$
 
-porosity varies with texture, structure, and bulk density. Soils with more clay tend to have greater porosity than soils where sands dominate the size separates. The pores that arise owing to the size and irregular shape of the soils size separates are called \textbf{matrix pores}. The aggregation of the size separates that favor the repeating planes of separation between the peds and the orientation of the aggregates that result in the larger pores. The resulting repeating planes of separation tend to increase porosity. These pores between peds together with burrowing arthropods, abandoned root channels, and voids caused by entrapped gasses by water movement are called \textbf{nonmatrix pores}. nonmatrix pores are generally larger in cross section than matrix pores.
+porosity varies with texture, structure, and bulk density. Soils with more clay tend to have greater porosity than soils where sands dominate the size separates. 
 
 Porosity and bulk density are inversely related and can be related with maths as:
 
