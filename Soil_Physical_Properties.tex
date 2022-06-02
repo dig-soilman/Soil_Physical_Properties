@@ -1,5 +1,5 @@
 
-\documentclass[a5paper]{book}
+\documentclass[a5paper]{report}
 
 \usepackage[utf8]{inputenc}
 
@@ -17,7 +17,9 @@
 
 \graphicspath{ {images/} } % Path relative to the .tex file containing the \includegraphics command
 
-\usepackage{siunitx}
+\usepackage{siunitx}[=v3] % comprehensive (si) units package
+
+\usepackage[version=4]{mhchem} % provides commands for typesetting chemical molecular formulae and equations
 
 % begin itemize and enumerate formatting
 \usepackage{enumitem} % Control layout of itemize, enumerate, description
@@ -42,9 +44,18 @@
 
 \maketitle
 
-% TODO Add introductory section.
+\section{Introduction}
+\label{introduction}
 
+% TODO populate introductory section.
 Descriptions of the physical properties of soil include size separates, organization of size separates, density, voids or porosity, consistency, color, and temperature.
+
+\section{Objectives}
+\label{objectives}
+
+% TODO populate with objectives
+
+
     
 \section{Organic Soil}
 \label{organic_soil}
@@ -52,16 +63,16 @@ Descriptions of the physical properties of soil include size separates, organiza
 Soil solids can be mineral or organic in nature. A soil that consists of primarily accumulated plant material of various degrees of decomposition are separated from soils derived from dominantly mineral materials. The use of the term \textbf{organic soil} in this text is that defined by the U.S. Department of Agriculture. To be considered an organic soil:
     
 \begin{enumerate}
-    \item Soil that is never saturated with water for more than a few days must contain more than 20 percent organic carbon.
+    \item Soil that is never saturated with water for more than a few days must contain more than \qty{20}{\percent} organic carbon.
     \item If the soil is saturated for periods longer than a few days, it is organic if it contains the following:
     \begin{itemize}
-        \item At least 12 percent organic carbon if the soil has not clay,
-        \item At least 18 percent organic carbon if the soil has 60 percent or more clay, or
+        \item At least \qty{12}{\percent} organic carbon if the soil has not clay,
+        \item At least \qty{18}{\percent} percent organic carbon if the soil has 60 percent or more clay, or
         \item If it contains a proportional amount of organic carbon for intermediate amounts of clay.
     \end{itemize}
 \end{enumerate}
     
-The percentages are determined on a mass basis. A conversion factor of 1.72 is commonly used to convert organic carbon to organic matter. This conversion factor assumes organic matter contains 58 \% organic carbon. However this can vary with the type of organic matter, soil type and soil depth. Conversion factors can be as high as 2.50, especially for subsoils.
+The percentages are determined on a mass basis. A conversion factor of \num{1.72} is commonly used to convert organic carbon to organic matter. This conversion factor assumes organic matter contains \qty{58}{\percent} organic carbon. However this can vary with the type of organic matter, soil type and soil depth. Conversion factors can be as high as \num{2.50}, especially for subsoils.
     
 Most soils have some organic carbon but are below the levels necessary to attain the organic soil name. The inorganic or mineral fraction of the soil are measured and classified based on size.
     
@@ -71,27 +82,27 @@ Separates are the individual particles that together with organics, salts, and e
     
 First, the standard is determination based on only the mineral fraction. Organics, salts, and evaporites are not included as part of the whole.
     
-Second, we group the separates of the “whole” soil into two classes, the coarse fraction (CF) and the fine-earth fraction. The coarse fraction consists of the particles greater than \SI{2}{\milli\metre} in diameter and the fine-earth fraction consist of particles equal to and less than \SI{2}{\milli\metre}.
+Second, we group the separates of the “whole” soil into two classes, the coarse fraction (CF) and the fine-earth fraction. The coarse fraction consists of the particles greater than \qty{2}{\milli\metre} in diameter and the fine-earth fraction consist of particles equal to and less than \qty[mode = text]{2}{\milli\metre}.
     
 Both the coarse fraction and fine-earth fraction are further divided, again, on the basis of size. The fine-earth fraction is divided first into three size separates: sand, silt, and clay.
     
-Coarse Fraction are separates greater in diameter than \SI{2}{\milli\metre}.
+Coarse Fraction are separates greater in diameter than \qty[mode = text]{2}{\milli\metre}.
     
-Fine-Earth Fraction are separates less than or equal to \SI{2}{\milli\metre}.
+Fine-Earth Fraction are separates less than or equal to \qty[mode = text]{2}{\milli\metre}.
     
 Coarse fragments, or the coarse fraction, are important to consider because they occupy space in the soil, but contribute little or no voids (water and air storage) and chemical reactivity (nutrient storage). Thus, coarse fragments reduce the soil volume available to hold water and nutrients. Coarse fragments may also make cultivation difficult.
 
 \subsection{Soil Texture}
     
-Soil texture refers to the proportion groupings of size separates in the inorganic soil fine earth fraction (\textless \SI{2}{\milli\metre} in diameter). There are generally three groupings with further divisions of the three to achieve more refined interpretive relevance. Texture can generally not be changed, except at great expense (example: adding sand to your garden). The three groupings of the fine earth fraction are sand, silt, and clay.
+Soil texture refers to the proportion groupings of size separates in the inorganic soil fine earth fraction (\textless \qty[mode = text]{2}{\milli\metre} in diameter). There are generally three groupings with further divisions of the three to achieve more refined interpretive relevance. Texture can generally not be changed, except at great expense (example: adding sand to your garden). The three groupings of the fine earth fraction are sand, silt, and clay.
     
-The sands are the separates between \SI{0.05}{} to \SI{2}{\milli\metre}.
+The sands are the separates between \qtyrange{0.05}{2}{\milli\metre}.
 
-The sand size separates are further classed into five size classes. \emph{Very Course Sand} separates are from \SI{2}{\milli\metre} to \SI{1}{\milli\metre} diameter. \emph{Course Sand} separates are from \SI{1}{\milli\metre} to \SI{0.5}{\milli\metre} diameter. \emph{Medium Sand} separates is from \SI{0.5}{\milli\metre} to \SI{0.25}{\milli\metre} diameter. \emph{Fine Sand} separates is from \SI{0.25}{\milli\metre} to \SI{0.10}{\milli\metre} diameter. \emph{Very Fine Sand} separates is from \SI{0.10}{\milli\metre} to \SI{0.05}{\milli\metre} diameter.
+The sand size separates are further classed into five size classes. \emph{Very Course Sand} separates are from \qtyrange{2}{1}{\milli\metre} diameter. \emph{Course Sand} separates are from \qtyrange{1}{0.5}{\milli\metre} diameter. \emph{Medium Sand} separates is from \qtyrange{0.5}{0.25}{\milli\metre} diameter. \emph{Fine Sand} separates is from \qtyrange{0.25}{0.10}{\milli\metre} diameter. \emph{Very Fine Sand} separates is from \qtyrange{0.10}{0.05}{\milli\metre} diameter.
     
-Silt are separates are between the diameters of \SI{0.002}{} – \SI{0.05}{\milli\metre} or \SI{2}{} – \SI{50}{\micro\metre}, where $\mu$, is micro.
+Silt are separates are between the diameters of \qtyrange{0.002}{0.05}{\milli\metre} or \qtyrange{2}{50}{\micro\metre}, where \unit{\micro}, is micro.
 
-Clay are separates with diameters of \SI{0.002}{\milli\metre} or \SI{2}{\micro\metre}.
+Clay are separates with diameters of \qty[mode = text]{0.002}{\milli\metre} or \qty[mode = text]{2}{\micro\metre}.
 
 \subsection{Textural Triangle}
     
@@ -229,6 +240,7 @@ Boulder     & \textgreater\, 600\,mm \\
 \end{table}
     
 \section{Soil Structure}
+\label{structure}
     
 \textbf{Structure} is the term used to convey the arrangement of size separates pedologically arranged into larger stable units called \textbf{aggregates}, or \textbf{peds}, in the soil expressed as regularly repeating pattern of permanent cleavage planes in the soil mass. The soil aggregates cleave planes form due to repeated compression and contraction of soil particles which may be related to shrink/swell of clay, freeze-thaw cycles, root penetration through soil animals (earth worm activity), etc. The relative mechanical and water stability of peds are variable and related to the aggregate promoting substances organics, iron oxides, carbonates, clays, and/or silica. Organics can be from decomposed vegetative material and/or root polysaccharids exuded from roots.
     
@@ -301,8 +313,9 @@ Size is conveyed in such a way that the peds narrowest dimension  determines the
 Increasing sodium tends to speed structure degradation. The sodium interacts with the soil particles promoting dispersion. Dispersed size separates are frequently in clay size class and greatly diminish the movement of water and this limits the removal of salts. Tillage also destroys structure and though it can temporarily fluff up the size separates it tends to promote the decomposition of organic matter and the organic matter, as stated previously, is an aggregating agent that promotes structure stability. Trafficking by animals and machinery also have a negative impact on soil structure.
     
 \section{Density}
+\label{density}
     
-Solids Density $\left(\rho_s\right)$ is the density of the solid soil particles only in units of mass per volume e.g., $\left(\frac{g}{cm^3}\right)$. Often in texts the greek letter rho  is a shorthand symbol for density and s is for solids.
+Solids Density $\left(\rho_s\right)$ is the density of the solid soil particles only in units of mass per volume e.g., $\left(\unit{\gram\per\cubic\centi\metre}\right)$. Often in texts the greek letter rho  is a shorthand symbol for density and s is for solids.
 
 \begin{equation}
     Particle\,Density = \left(\frac{Weight\,of\,Solids}{Volume\,of\,Solids}\right)   
@@ -310,9 +323,9 @@ Solids Density $\left(\rho_s\right)$ is the density of the solid soil particles 
 
 Expressed in a maths form $\rho_p =\frac{W_s}{V_s}$ where $\rho$ is density, $p$ is particle, $W$ is weight, $V$ is volume, and $s$ is solid.
 
-Range of particle density values for typical soil materials varies with inorganic materials ranging from $2.6 \text{to} 2.75 g\,cm^{-3}$.
+Range of particle density values for typical soil materials varies with inorganic materials ranging from \numrange{2.6}{2.75} \unit{\gram\per\cubic\centi\metre}.
 
-For inorganic materials $\rho_s$ is  (Al = 27 g/mole; Si = 28 g/mole; and Fe = 56 g/mole). For organic materials $\rho_s$ is  (C =12 g/mole; O = 16 g/mole; and H = 1 g/mole).
+For inorganic materials $\rho_s$ is  (Al = \qty[per-mode = symbol]{27}{\gram\per\mole}; Si =  \qty[per-mode = symbol]{28}{\gram\per\mole}; and Fe = \qty[per-mode = symbol]{56}{\gram\per\mole}). For organic materials $\rho_s$ is  (C = \qty[per-mode = symbol]{12}{\gram\per\mole}; O = \qty[per-mode = symbol]{16}{\gram\per\mole}; and H = \qty[per-mode = symbol]{1}{\gram\per\mole}).
 
 The $\rho_s$ is affected by the kind of minerals or rock (e.g., iron is heavier than aluminum) and the proportion of organic matter to mineral (inorganic) material.
 
@@ -336,7 +349,7 @@ For maths treatment:
     \end{aligned}
 \end{equation}
 
-The $\rho_b$ values for most mineral (inorganic) soils are $1.20\,\text{to}\,1.40\,\frac{\text{g}}{\text{cm}^3}$ and for organic soils $0.10\,\text{to}\,0.25\,\frac{\text{g}}{\text{cm}^3}$. Recall that the specific gravity (density) of water, at STP, is $1.00\,\frac{\text{g}}{\text{cm}^3}$.
+The $\rho_b$ values for most mineral (inorganic) soils are $\ce{1.20 to 1.40 \frac{g}{cm^3}}$ and for organic soils $\ce{0.10 to 0.25 \frac{g}{cm^3}}$. Recall that the specific gravity (density) of water, at STP, is $\ce{1.00 \frac{g}{cm^3}}$.
 
 Bulk Density is affected by:
 \begin{itemize}
@@ -348,6 +361,7 @@ Bulk Density is affected by:
 \end{itemize}
 
 \section{Voids}
+\label{voids}
 
 The voids that arise owing to the size and irregular shape of the soils size separates exist in what can be termed the \textbf{matrix}. Some writings will refer to these as intraaggregate though an a-pedal\textemdash{}structurless\textemdash{}soil matrix includes these type of voids. The aggregation of the size separates that favor the repeating planes of separation between the peds orientated aggregates result in larger diameter voids. The formation of structural units and the resulting repeating planes of separation tend to increase the relative proportion of void to solid.  These voids between peds together with voids created by burrowing arthropods, abandoned root channels, and voids caused by entrapped gasses by water movement can be considered \textbf{nonmatrix voids}. Nonmatrix voids are not only generally larger in cross section than matrix voids, but also can be considered more dynamic in their fluid occupancy: air and/or water.  
 
@@ -372,6 +386,7 @@ Though a physical property, the distribution of voids among the afore mentioned 
 Of the for voids properties continuity, tortousity, size distribution, and total void volume the total void volume is perhaps most easily measured. A common measurement is porosity.  
 
 \section{Porosity}
+\lable{porosity}
 
 Porosity $\left(\eta\right)$ is the fraction of soil volume occupied by air and water (non-solids). Soil porosities range from 0.30 to 0.60 (or 30\% to 60\%) for most soils.
 
@@ -432,7 +447,7 @@ Porosity as a percent:
 
 Example:
 
-What is the percent porosity of a soil where $\rho_b = \frac{1.80\,g}{cm^3}$ and $\rho_s = \frac{2.65\,g}{cm^3}$ ? $\%\,\eta = 32$
+What is the percent porosity of a soil where $\rho_b = \ce{\frac{1.80\,g}{cm^3}}$ and $\rho_s = \ce{\frac{2.65\,g}{cm^3}}$ ? $\%\,\eta = 32$
 
 porosity varies with texture, structure, and bulk density. Soils with more clay tend to have greater porosity than soils where sands dominate the size separates. 
 
@@ -451,7 +466,6 @@ Porosity and bulk density are inversely related and can be related with maths as
 
 Decreasing bulk density promotes porosity. The pores are the voids between the solids that can contain air and or water. Biologicals in the soil rely on water stored there and aerobic organisms rely of the air composition.
 
-
 Though the porosity is generally greater in a clay soil than a sand soil, the average cross-section of sandy soil matrix pores are generally greater than the average cross-section of clay soils. Thus, water and air flow more rapidly through sandy soils and more slowly through soils high in clay. This is owing to the interaction of these fluids and the solids. \textit{For more on fluid interaction with solids seek a the treatment of water in soils.}
 
 When discussing nonmatrix pores it is frequently useful to group pores by pore diameter where macropores are larger pores with a diameter greater than 0.08 mm and micropores having a diameter less than 0.08 mm. The use of pore diameter is useful because water and air move relatively rapidly through macropores and much slower through micropores. 
@@ -462,6 +476,7 @@ Pores can also be grouped into three general types. Interparticle pores are the 
 
 
 \section{Soil Color}
+\label{color}
     
 Most soil minerals are not highly colored (often light gray); color is due to the presence of materials that coat the surfaces of soil minerals. Soil color can tell us a lot about a soil (e.g., drainage condition, organic matter content \& relative degree of chemical weathering); however, it has little affect on the behavior and use of soils.
     
@@ -483,5 +498,19 @@ Redoximorphic features were formerly referred to as mottles in older texts but t
     
 Redoximorphic features are spots or patches of different color or shades of color interspersed with the dominant soil matrix color. Their presence indicates alternating periods of good drainage with poor drainage. Examples include bright red or yellow patches in a grayish soil matrix (background).
 
+\section{Strength}
+\label{strength}
+
+% TODO add strength and consistence content
+
+\section{Temperature}
+\label{temperature}
+
+% TODO add temperature content
+
+\section{Erosion}
+\label{erosion}
+
+% TODO add erosion content
 
 \end{document}
