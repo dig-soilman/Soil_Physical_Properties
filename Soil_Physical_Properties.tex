@@ -17,7 +17,7 @@
 
 \graphicspath{ {images/} } % Path relative to the .tex file containing the \includegraphics command
 
-\usepackage{siunitx}[=v3] % comprehensive (si) units package
+\usepackage{siunitx} % comprehensive (si) units package and overleaf chokes on [=v3]
 
 \usepackage[version=4]{mhchem} % provides commands for typesetting chemical molecular formulae and equations
 
@@ -151,7 +151,7 @@ Laboratory procedures to determine the actual textural class begins by separatio
 
 Pretreatments to the 2~mm and smaller mineral fraction enhance separation of the size separates. Coarser organic matter is removed and the humus fraction of organic matter is oxidized with hydrogen peroxide. Salts can be removed by passing water through the soil. Carbonates can be evolved with a weak acid such as glacial acetic acid and mild heat. Iron can be reduced and chelated for removal.
 
-The remaining \SI{2}{\milli\metre} and smaller mineral fraction separates are then dispersed with sodium hexametaphosphate with mixing and the \SI{2000}{} to \SI{50}{\micro\metre} sands are separated by sieving from the $\leq$ \SI{50}{\micro\metre} separates silt and clay, fraction. Sampling an aliquot of the suspension at a specified depth via a pipette to isolate the $\leq$ \SI{2}{\micro\metre} clay follows dispersion and sedimentation.
+The remaining \qty[]{2}{\milli\metre} and smaller mineral fraction separates are then dispersed with sodium hexametaphosphate with mixing and the \qty{2000}{} to \qty{50}{\micro\metre} sands are separated by sieving from the $\leq$ \qty{50}{\micro\metre} separates silt and clay, fraction. Sampling an aliquot of the suspension at a specified depth via a pipette to isolate the $\leq$ \qty{2}{\micro\metre} clay follows dispersion and sedimentation.
 
 Such pipette sampling is considered to be the “platinum standard” for textural analysis.
 
@@ -260,7 +260,7 @@ The prismatic and columnar type structure are taller than wide with the prismati
 
 Granular and blocky structural types are roughly equidistant side to sided and top to bottom. Granular are polyhedral with irregular faces that are difficult to imagine a clear nesting faces with their neighbors. Blocky structures planar faces are discernible as nesting with neighboring blocks. Angular describes blocky structure type with sharp angular faces versus the subangular blocky polyhedrals wherein the planar faces lack sharp angles and are subrounded.
 
-Wedge type structure is elliptical and terminate at acute angles, often $30^{\circ}$, or $60^{\circ}$, with slickenside bounding edges. While the wedge structure type does not require the soil be a U.S. Soil Taxonomy Vertisol Order, the Vertisol Order, and Vertic taxonomic subgroups must include wedge type structure.
+Wedge type structure is elliptical and terminate at acute angles, often \ang{30}, or \ang{60}, with slickenside bounding edges. While the wedge structure type does not require the soil be a U.S. Soil Taxonomy Vertisol Order, the Vertisol Order, and Vertic taxonomic subgroups must include wedge type structure.
 
 Lenticular type structure is overlapping, lens-shaped peds that are  generally parallel to the soil surface that are thick at the center and taper toward the edges and are formed by active or relict periglacial frost processes. Most common in soils with moderate to high water-holding capacity in moist conditions.
 
@@ -331,7 +331,7 @@ The $\rho_s$ is affected by the kind of minerals or rock (e.g., iron is heavier 
 
 The $\rho_s$ is not affected by texture or soil structure (arrangement of soil solids).
 
-Bulk Density $\left(\rho_b\right)$ is a measure of the weight of the soil per unit volume. Volume includes both solids and pore space. Usually reported as the weight of oven-dry soil following heating to $\SI{110}{\degreeCelsius}$.
+Bulk Density $\left(\rho_b\right)$ is a measure of the weight of the soil per unit volume. Volume includes both solids and pore space. Usually reported as the weight of oven-dry soil following heating to \qty{110}{\degreeCelsius}.
 
 \begin{equation}
     Bulk\,Density = \left(\frac{Weight\,of\,Oven\,Dry\,Soil}{Volume\,of\,Soil\,Sampled}\right)
@@ -363,32 +363,34 @@ Bulk Density is affected by:
 \section{Voids}
 \label{voids}
 
-The voids that arise owing to the size and irregular shape of the soils size separates exist in what can be termed the \textbf{matrix}. Some writings will refer to these as intraaggregate though an a-pedal\textemdash{}structurless\textemdash{}soil matrix includes these type of voids. The aggregation of the size separates that favor the repeating planes of separation between the peds orientated aggregates result in larger diameter voids. The formation of structural units and the resulting repeating planes of separation tend to increase the relative proportion of void to solid.  These voids between peds together with voids created by burrowing arthropods, abandoned root channels, and voids caused by entrapped gasses by water movement can be considered \textbf{nonmatrix voids}. Nonmatrix voids are not only generally larger in cross section than matrix voids, but also can be considered more dynamic in their fluid occupancy: air and/or water.  
+The voids that arise owing to the size and irregular shape of the soils size separates exist in what can be termed the \textbf{matrix}. Some writings will refer to these as intraaggregate voids though this assumes that aggragation currently exists. An a-pedal\textemdash{}structurless\textemdash{}soil matrix also includes these voids in the matrix. The aggregation of the size separates that favor the repeating planes of separation between the peds\textemdash{}orientated aggregates\textemdash{}are known to often result in larger diameter voids. The formation of structural units and the resulting repeating planes of separation tend to increase the relative proportion of void to solid and the term interaffregate voids is often applied to th voids between the 'structural' ped units. These voids between peds together with voids created by burrowing arthropods, abandoned root channels, and voids caused by entrapped gasses as a result of water movement can be considered \textbf{nonmatrix voids}. Nonmatrix voids are not only generally larger in cross section than matrix voids, but also can be considered more dynamic in their fluid occupancy: air and/or water.  
 
 % TODO when water and biological texts are written, and if included with this text, the below paragraph can be edited to cite directly.
 
 This fluid occupancy is of particular interest since both air and water contents are of great interest to biologicals. The occupancy of the voids by water is a storage medium that is critical to biologicals. The movement of the water and the solutes in the water is also of import to the biologicals. The storage and movement of water will be discussed in conjunction with biologicals separately in a forthcoming publication. Similarly, a more targeted treatment of water will also be in an additional forthcoming publication.  
 
+Similarly, the proportion of air in the voids is critical to aerobic biologicals\textemdash{}plants, arthropods, and numerous microorganisms\textemdash{}and the soil air relative composition is, in turn, partially controlled by void diameter.
+
 It is appropriate, however, to present a classification of voids based on their effective diameter, or size. The basis of the following classification is soil water\textemdash{}plant relationships.  
 
-\textbf{Macrovoids} are \textgreater{} \SI{75}{\micro\metre} and was chosen utilizing empirical data wherein tensions of $\leq$ \SI{40}{\centi\metre} ($\leq$ \SI{-4}{kPa}) led to greater percolation rates. The emptying of macrovoids also leads to air exchange within the soil.  
+\textbf{Macrovoids} are \textgreater{} \qty{75}{\micro\metre} and was chosen utilizing empirical data wherein tensions of $\leq$ \qty{40}{\centi\metre} ($\leq$ \qty{-4}{kPa}) led to greater percolation rates. The emptying of macrovoids also leads to air exchange within the soil.  
 
-\textbf{Mesovoids} are \SI{30}{\micro\metre}\textemdash \SI{75}{\micro\metre} are important in transport and distribution of water. Mesovoids together with marcrovoids are contributors to renewal and exchange of air in the soil.  
+\textbf{Mesovoids} are \qtyrange{30}{75}{\micro\metre} are important in transport and distribution of water. Mesovoids together with marcrovoids are contributors to renewal and exchange of air in the soil.  
 
-\textbf{Microvoids} \SI{5}{}\textemdash \SI{30}{\micro\metre} and \textbf{ultramicrovoids} \SI{0.1}{}\textemdash \SI{5}{\micro\metre} are are voids most responsible for storage of water that is available to plants, as the habitat for microorganisims, and soil fauna.  
+\textbf{Microvoids} \qtyrange{5}{30}{\micro\metre} and \textbf{ultramicrovoids} \qty{0.1}{}\textemdash \qty{5}{\micro\metre} are are voids most responsible for storage of water that is available to plants, as the habitat for microorganisims, and soil fauna.  
 
-\textbf{Cryptovoids} \textless{} \SI{0.1}{\micro\metre} represent storage of water that is generally unavailable to most plants. They are generally too small for roots and most microorganisms.  
+\textbf{Cryptovoids} \textless{} \qty{0.1}{\micro\metre} represent storage of water that is generally unavailable to most plants. They are generally too small for roots and most microorganisms.  
 
 Void connectivity and tortuous paths between void tubules dictates the relative movement and connectivity of the air and water within the soil. Irregular effective diameters are quite common in soils and impede the filing and emptying of the voids.  
 
-Though a physical property, the distribution of voids among the afore mentioned void classifications as part of the total volume of voids has a meaningful impact on the soil system and the ecological process for which the soil system is so important. Except for the cryptopores the relative proportions of these classes can be impacted by management and soil health practices.  
+The distribution of voids among the afore mentioned void classifications as part of the total volume of voids has a meaningful impact on the soil system and the ecological process for which the soil system is so important. Except for the cryptopores the relative proportions of these classes can be impacted by management and soil health practices.  
 
-Of the for voids properties continuity, tortousity, size distribution, and total void volume the total void volume is perhaps most easily measured. A common measurement is porosity.  
+Of the for voids properties continuity, tortousity, size distribution, and total void volume the total void volume is perhaps most easily measured. A common measurement reported is porosity.  
 
 \section{Porosity}
-\lable{porosity}
+\label{porosity}
 
-Porosity $\left(\eta\right)$ is the fraction of soil volume occupied by air and water (non-solids). Soil porosities range from 0.30 to 0.60 (or 30\% to 60\%) for most soils.
+Porosity $\left(\eta\right)$ is the fraction of soil volume occupied by air and water (non-solids). Soil porosities range from 0.30 to 0.60 (or \qty[]{30}{\percent} to \qty[]{60}{\percent}) for most soils. Note the difference between porosity $\left(\eta\right)$ or $\left(\phi\right)$ and percent porosity $\left(\%\,\eta\right)$ or $\left(\%\,\phi\right)$. \emph{Note}: While the lower case Greek letters eta $\left(\eta\right)$ and phi $\left(\phi\right)$ are most often applied as the variable for porosity any symbol can be applied. It is a reminder to define each variable when presenting relationships with variables. 
 
 A maths treatment of porosity is:
 
@@ -415,9 +417,9 @@ This can be simplified to:
     \end{aligned}
 \end{equation}
 
-It can be challenging to determine the $V_v$ when the relative proportions of $V_a$ and $V_w$ are unknown. When $V_a = 0$ the soil is saturated. Saturating a known total volume $\left(V_t\right)$  such as a core extracted from a soil and massing the saturated soil is useful because the density of water, its specific gravity, is know to be $1\,g\,cm^{-3}$. Since $V_a=0$ then $V_w=V_v$. The same sample can then have the water driven off by heating in a $\SI{110}{\degreeCelsius}$ oven until it no longer reduces in mass and the difference in mass equates to a volume of voids $\left(V_v\right)$ that the water occupied. This is useful because the particle density does not have to be measured.
+It can be challenging to determine the $V_v$ when the relative proportions of $V_a$ and $V_w$ are unknown. When $V_a = 0$ the soil is saturated. Saturating a known total volume $\left(V_t\right)$  such as a core extracted from a soil and massing the saturated soil is useful because the density of water, its specific gravity, is know to be \qty{1}{\gram\per\cubic\centi\metre}. Since $V_a=0$ then $V_w=V_v$. The same sample can then have the water driven off by heating in a $\qty{110}{\degreeCelsius}$ oven until it no longer reduces in mass and the difference in mass equates to a volume of voids $\left(V_v\right)$ that the water occupied. This is useful because the particle density does not have to be measured.
 
-Another estimate of porosity can be derived if the average solids density $\left(\rho_s\right)$ is known or estimated. Estimation of average solids density is frequently employed as a first estimate. Estimating average solids density is guided by empirical evidence and assumption that the dominate soil minerals might be quartz, feldspars, micas, and secondary clays. The solids density of $2.65\,g\,cm^{-3}$ is most frequently adopted when the average solids density is not measured.
+Another estimate of porosity can be derived if the average solids density $\left(\rho_s\right)$ is known or estimated. Estimation of average solids density is frequently employed as a first estimate. Estimating average solids density is guided by empirical evidence and assumption that the dominate soil minerals might be quartz, feldspars, micas, and secondary clays. The solids density of \qty{2.65}{\gram\per\cubic\centi\metre} is most frequently adopted when the average solids density is not measured.
 
 The quotient of bulk density $\left(\rho_b\right)$ to solids density $\left(\rho_s\right)$ for soil should always be a value less than one and represents the fraction of the whole soil that is occupied by the solids. When subtracted from the whole the quotient of bulk density to solids density will yield the fraction of the whole soil that is voids.
 
@@ -449,7 +451,7 @@ Example:
 
 What is the percent porosity of a soil where $\rho_b = \ce{\frac{1.80\,g}{cm^3}}$ and $\rho_s = \ce{\frac{2.65\,g}{cm^3}}$ ? $\%\,\eta = 32$
 
-porosity varies with texture, structure, and bulk density. Soils with more clay tend to have greater porosity than soils where sands dominate the size separates. 
+Porosity varies with texture, structure, and bulk density. Soils with more clay tend to have greater porosity than soils where sands dominate the size separates.
 
 Porosity and bulk density are inversely related and can be related with maths as:
 
@@ -466,14 +468,13 @@ Porosity and bulk density are inversely related and can be related with maths as
 
 Decreasing bulk density promotes porosity. The pores are the voids between the solids that can contain air and or water. Biologicals in the soil rely on water stored there and aerobic organisms rely of the air composition.
 
-Though the porosity is generally greater in a clay soil than a sand soil, the average cross-section of sandy soil matrix pores are generally greater than the average cross-section of clay soils. Thus, water and air flow more rapidly through sandy soils and more slowly through soils high in clay. This is owing to the interaction of these fluids and the solids. \textit{For more on fluid interaction with solids seek a the treatment of water in soils.}
+Though the porosity is generally greater in a clay soil than a sand soil, the average cross-section of sandy soil matrix voids connected as pores are generally greater than the average cross-section of clay soils. Thus, water and air flow more rapidly through sandy soils and more slowly through soils high in clay. This is owing to the interaction of these fluids and the solids surfaces. \textit{For more on fluid interaction with solids seek a the treatment of water in soils.}
 
-When discussing nonmatrix pores it is frequently useful to group pores by pore diameter where macropores are larger pores with a diameter greater than 0.08 mm and micropores having a diameter less than 0.08 mm. The use of pore diameter is useful because water and air move relatively rapidly through macropores and much slower through micropores. 
+When discussing pores it is frequently useful to group pores by the classes of void diameter(s) where macropores are larger pores with a diameter greater than \textgreater{}\qty[]{0.075}{\milli\metre} and micropores having a diameter \textless{}\qty[]{0.075}{\milli\metre}. The use of void diameters is useful because water and air move relatively rapidly through the voids connected together to become macropores and much slower through smaller voids connected together to become micropores. Still, the continuity of void diameter in soil are generally not linear especially within the microvoids and this inter-connectivity between varying diameter voids impacts the movement of the fluids.
 
-The matrix pores of sandy soils are dominated mainly macropores. Clay soils have mainly micropores. Thus, water and air flow rapidly through sandy soils and slowly through soils high in clay.
+The matrix pores of sandy soils are dominated more by macrovoids. Clay soils are more dominated by microvoids. Thus, in most instances water and air flow more rapidly through sandy soils and more slowly through soils higher in clay.
 
-Pores can also be grouped into three general types. Interparticle pores are the spaces occurring between the individual soil particles. Interaggregate pores are the space occurring between soil aggregates. Biopores are pores created by biological activity (e.g., roots and earthworms).
-
+Pores can also be grouped into three general types in keeping with the types of voids. Interparticle pores are the connected void spaces occurring between the individual soil particles. Interaggregate pores are the connected void space occurring between soil aggregates. Biopores are pores created by biological activity (e.g., roots and earthworms).
 
 \section{Soil Color}
 \label{color}
