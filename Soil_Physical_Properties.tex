@@ -1,53 +1,37 @@
-% Donald G. McGahan 2022 v. 01 
-\documentclass[a5paper]{report}
-
+% Donald G. McGahan 2022 v. 01 Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
+\documentclass[]{report}
 \usepackage[utf8]{inputenc}
-
 \usepackage[a5paper, inner=1.5cm, outer=1.5cm, top=1.75cm, bottom=1.5cm]{geometry} % this will be half an A4 and is better presented on smartphones
-
 \usepackage{amsmath} % provides miscellaneous enhancements for improving the information structure and printed output of documents containing mathematical formulas 
-
 \usepackage{amsfonts,amssymb} % amssymb provides an extended symbol collection and internally loads amsfonts Computer Modern font plus a set of miscellaneous TeX fonts that augment the standard Computer Modern set
-
 \usepackage{graphicx} % show images
-
 \usepackage{multirow} % for multirow in tables
-
 \usepackage{array}
-
 \graphicspath{ {images/} } % Path relative to the .tex file containing the \includegraphics command
-
-\usepackage{siunitx} % comprehensive (si) units package and overleaf chokes on [=v3]
-
+\usepackage[=v3]{siunitx} % comprehensive (si) units package and overleaf chokes on [=v3]
 \usepackage[version=4]{mhchem} % provides commands for typesetting chemical molecular formulae and equations
-
 % begin itemize and enumerate formatting
 \usepackage{enumitem} % Control layout of itemize, enumerate, description
 \setlist{nolistsep} % removes space between list and enumerate items
 % end itemize and enumerate formatting
-
 % begin paragraph formatting
 \usepackage{parskip}
 \setlength{\parindent}{0pt} % Default is 15pt thus no first line indent
 %\setlength{\parskip}{2mm plus1mm minus1mm} % adds space between paragraphs
 \setlength{\parskip}{\baselineskip} % adds space between paragraphs
 % end paragraph formatting
-
-
 %+Title
   \title{Soils: Physical Properties}
   \author{Donald G. McGahan\\ Professor Tarleton State University}
   \date{June 5, 2022}
 %-Title
-
 \begin{document}
-
 \maketitle
-
 \section{Introduction}
 \label{introduction}
 
 % TODO populate introductory section.
+
 Descriptions of the physical properties of soil include size separates, organization of size separates, density, voids or porosity, consistency, color, and temperature.
 
 \section{Objectives}
@@ -55,8 +39,6 @@ Descriptions of the physical properties of soil include size separates, organiza
 
 % TODO populate with objectives
 
-
-    
 \section{Organic Soil}
 \label{organic_soil}
     
@@ -482,41 +464,50 @@ Pores can also be grouped into three general types in keeping with the types of 
 Most primary soil minerals are not highly colored (often light gray). A primary soil mineral are those that have not been altered chemically since they solidified from the molten magma. Soil color has great interpretive significance as it is indirectly related to many other soil properties, conditions, and processes.
 
 % The following passage refers another chapter or textbook addressing soil chemistry.
-Soil color is mostly due to the presence of materials that coat the surfaces of soil minerals. The materials coating the soil minerals could be organic materials or secondary soil minerals. Recrystallized or modified products from the chemical breakdown and/or alteration of primary minerals are the origin of secondary soil minerals. A separate treatment of soil minerals is addressed in a separate chapter or book. 
+Soil color is mostly due to the presence of materials that coat the surfaces of soil minerals. These materials coating the soil minerals could be organic materials or secondary soil minerals.
 
-% Lists of items to be addressed: soil color can tell us a lot about a soil (e.g., drainage condition, organic matter content \& relative degree of chemical weathering); directly, however, it has little affect on the behavior and use of soils.
-    
-The Munsell Book of Color
-    
-Example: 10YR 5/4
-    
-\begin{itemize}
-    \item Hue = 10 YR
-    \item Value = 5
-    \item Chroma = 4
-\end{itemize}
-    
-Hue is the spectral color or dominant wavelength
-    
-\subsection{Redoximorphic Features}
-    
-Redoximorphic features were formerly referred to as mottles in older texts but the term mottles are now reserved for geogenic features.
-    
-Redoximorphic features are spots or patches of different color or shades of color interspersed with the dominant soil matrix color. Their presence indicates alternating periods of good drainage with poor drainage. Examples include bright red or yellow patches in a grayish soil matrix (background).
+Soil organic materials consists of plant, animal and microbial residues in various stages of decomposition. The compounds that are more resistant to decay or those relatively protected from decay owing to their adsorption onto mineral soil surfaces are  collectively termed humus. A fraction of the humus consist of relatively higher weight but more amorphous compounds. It is these compounds that are influential in imparting a brown to black color to soils.
 
-\section{Strength}
-\label{strength}
+Recrystallized or modified products from the chemical breakdown and/or alteration of primary minerals are the origin of secondary soil minerals. Iron in primary minerals begin in there Fe-II reduced form. With exposure to water and air in the soil the iron is oxidized to Fe-III which in sufficient quantities results rubification.
+ 
+Alteration of reducing and oxidizing (redox) conditions seen when the soil is in well aerated conditions may be seen in the soil as zones of concentrations offset by zones of depletions. The inference of such might be that oxidized and depleted iron patterns, or redoximorphic condition, are a result of a cycling between being saturated with water, poor drainage, followed by more aerobic conditions, good drainage, these are some of the evidences of hydric soil conditions in that zone of the soil, and soil color are strong inferences toward such a hydric conditions.
+    
+Soil color determination is accomplished by matching soil to color chips in The Munsell Book of Color. Color is communicated in a letter and number combination. These describe three parts of color: hue, value, and chroma such as 10YR 5/4. \textit{Hue} is the dominant spectral wavelength such as the colors of the rainbow (ROYGBIV). Soil is frequently in the red-orange-yellow range.  A 10R represents \qty{100}{\percent} whereas a 5Y represents \qty{75}{\percent} yellow and \qty{25}{\percent} red. \textit{Value} is the lightness of color. A value of 0 would be lowest lightness and 10 would be the lightest. \textit{Chroma} is the relative purity, intensity or strength of the hue. A chroma of 0 is pure black, grey, or white (hue dependent).
 
-% TODO add strength and consistence content
+Previously the example given was 10YR 5/4 where 10YR is the hue, 5 is the value, and 4 is the chroma.
+    
+This section on color started by stating that there are 'inferences' derived from color. Actually, it is slightly more interesting because it is not just the determination of color but also the distribution of differences in color in the soil  within or on the surface of a ped or other voids.
+ 
+One technical classification is very dependent upon the morphology of soil color and in particular redox. The reduction of iron and manganese under reducing conditions, such as saturation with water in warm conditions, results in them being  transported (are more mobile when reduced) and reoxidized when the water drains. These patterns of depleted areas interspersed with areas displaying oxidized iron (rubified) and manganese (brown colored) indicate, or are interpreted as, arising from a fluctuating water table. The depth at which these redoximorphic features occur together with the timing and length of saturation leads to \textbf{drainage class}.
+ 
+\subsection{Soil Drainage Classes}
+\label{soildrainageclasses}
 
-\section{Temperature}
-\label{temperature}
+Soil drainage class is a way of communicating internal soil drainage conditions together with the depth in the soil that reducing conditions were, or are, prevalent (as determined by soil morphological features). There are seven such classes. The soil is examined to a depth of \qty{150}{\centi\metre}.
 
-% TODO add temperature content
+\textbf{Excessively drained}: Water is removed very rapidly (gravelly or coarse sand textures). The occurrence of free water is very deep (\textgreater{}\qty{150}{\centi\metre} or 60\,in). Free of mottling related to wetness.
 
-\section{Erosion}
-\label{erosion}
+\textbf{Somewhat excessively drained}: Water is removed from the soil rapidly (sands and loamy sand textures). The occurrence of free water commonly is very deep (\textgreater{}\qty{150}{\centi\metre} or 60\,in). Free of mottling related to wetness.
 
-% TODO add erosion content
+\textbf{Well drained}: Water is removed readily but not rapidly. Free water occurrence is deep (\textgreater{}\qty{150}{\centi\metre} or 60\,in). Well drained soils are generally free of mottles related to wetness in the upper \qty{150}{\centi\metre} (or 60\,in). There may be mottles deeper in the soil profile.
+
+\textbf{Moderately well drained}: Water is removed from the soil somewhat slowly during some periods of the year. Free water occurrence is moderately deep (\qtyrange{50}{100}{\centi\metre}) and transitory (\numrange{1}{3} months) to permanent (continuous). The soils are wet for only a short time within the rooting depth during the growing season. Moderately well drained soils may have mottles below a depth of \qty{50}{\centi\metre} (about\,20 in.). It is common for moderately well drained soils to have a slowly permeable layer within or immediately beneath the solum or a relatively high water table.
+
+\textbf{Somewhat poorly drained}: Water is removed slowly so that the soil is wet at a shallow depth for significant periods during the growing season. The occurrence of free water is shallow (\qtyrange{25}{50}{\centi\metre} or 10 to 20\,in.) and transitory (1 to 3 months) or common (present 3 to 6 months). Wetness markedly restricts the growth of many common crop plants unless artificial drainage is provided. They commonly have a high water table, and mottles occur below a depth of \qty{25}{\centi\metre} (about 10\,in.). These soils often have thick dark A horizons high in organic matter.
+
+\textbf{Poorly drained}: Water is removed so slowly that the soil is wet at shallow depths periodically during the growing season or remains wet for long periods. The occurrence of free water is shallow or very shallow (\textless{}\qty{25}{\centi\metre} about 10 in.) and common (\numrange{3}{6} months) or persistent (6 through 12 months). Free water is commonly at or near the surface long enough during the growing season so that mesophytic crops cannot be grown without artificial drainage. These soils are commonly gleyed rather than redoximorphic  because they remain anoxic for long periods.
+
+\textbf{Very poorly drained}: Water is removed from the soil so slowly that free water remains at or very near the ground surface during much of the growing season. The occurrence of free water is very shallow and persistent or permanent.
+
+\section{Consistence and Plasticity}
+\label{consistenceandplasticity}
+
+% TODO add Consistence and Plasticity content
+
+\section{Reaction}
+\label{reaction}
+
+% TODO add reaction content
+
 
 \end{document}
