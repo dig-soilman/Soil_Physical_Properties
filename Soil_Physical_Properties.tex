@@ -271,6 +271,12 @@ Soil structure may exist as a compound structure in which large peds may further
     
 Size is conveyed in such a way that the peds narrowest dimension  determines the size class for each type. Size classes for granular, angular blocky, sub-angular blocky, lenticular, wedge, prismatic, and columnar structure types are \emph{very fine}, \emph{fine}, \emph{medium}, \emph{coarse}, and \emph{very coarse}. For the platy structure type \emph{thin} is substituted for \emph{fine} and \emph{thick} is substituted for \emph{coarse} size class names.
 
+The five size classes for granular and platy structures are \qty{< 1}{\mm}, \qtyrange[range-units = single]{1}{< 2}{\mm}, \qtyrange[range-units = single]{2}{< 5}{\mm}, \qtyrange[range-units = single]{5}{< 10}{\mm}, and \qty[]{\geq 10}{\mm}.
+
+The six size classes for columnar, prismatic, wedge are \qty[]{< 10}{\mm}, \qtyrange[range-units = single]{10}{< 20}{mm}, \qtyrange[range-units = single]{20}{< 50}{\mm}, \qtyrange[range-units = single]{100}{< 500}{\mm}, and \qty[]{\ge 500}{\mm}. Note that these structures have this additional larger size class of extremely coarse.
+
+The five size class for angular and subangluar blocky and lenticular structure are \qty[]{< 5}{\mm}, \qtyrange[range-units = single]{5}{< 10}{\mm}, \qtyrange[range-units = single]{10}{< 20}{\mm}, \qtyrange[range-units = single]{20}{< 50}{\mm}, and \qty[]{\ge 50}{\mm}.
+
 % TODO Revise or Exclude Structure size class table. It does not translate to html via pandoc well. Consider revising or presenting in another form.
 
 \begin{table}[!htbp]
@@ -281,12 +287,12 @@ Size is conveyed in such a way that the peds narrowest dimension  determines the
 \hline
 \rule{0pt}{1.75em}Size Class & Code & \multicolumn{3}{c}{Criteria: Structural unit size (mm)} \\[0.75em] \cline{3-5} 
 \rule{0pt}{1.75em} && \parbox[c]{2cm}{Granular, Platy\\(Thickness)} & \parbox[c]{2cm}{Columnar, Prismatic, Wedge\\(Diameter)} & \parbox[c]{2cm}{Angular \& Subangular Blocky and Lenticular\\(Diameter)} \\[0.75em]
-\rule{0pt}{1.75em}\parbox[c]{2cm}{Very Fine\\(Very Thin)} & \parbox[c]{1cm}{VF\\(VN)} & 1 & \textless\,10 & \textless\,5 \\[0.75em]
-\rule{0pt}{1.75em}\parbox[c]{2cm}{Fine\\(Thin)} & \parbox[c]{1cm}{F\\(TN)} & 1\,to\,\textless\,2 & 10\,to\,\textless\,20 & 5\,to\,\textless\,10 \\[0.75em]
-\rule{0pt}{1.75em}\parbox[c]{2cm}{Medium\\(Medium)} & \parbox[c]{1cm}{F\\(TN)} & 2\,to\,\textless\,5 & 20\,to\,\textless\,50 & 10\,to\,\textless\,20 \\[0.75em]
-\rule{0pt}{1.75em}\parbox[c]{2cm}{Coarse\\(Thick)} & \parbox[c]{1cm}{CO\\(TK)} & 5\,to\,\textless\,10 & 50\,to\,\textless\,100 & \textless\,20\,to\,\textless\,50 \\[0.75em]
+\rule{0pt}{1.75em}\parbox[c]{2cm}{Very Fine\\(Very Thin)} & \parbox[c]{1cm}{VF\\(VN)} & \num{< 1} & \num{< 10} & \num{< 5} \\[0.75em]
+\rule{0pt}{1.75em}\parbox[c]{2cm}{Fine\\(Thin)} & \parbox[c]{1cm}{F\\(TN)} & \numrange{1}{< 2} & \numrange{10}{< 20} & {5}{< 10} \\[0.75em]
+\rule{0pt}{1.75em}\parbox[c]{2cm}{Medium\\(Medium)} & \parbox[c]{1cm}{F\\(TN)} & \numrange{2}{< 5} & \numrange{20}{50} & {10}{20} \\[0.75em]
+\rule{0pt}{1.75em}\parbox[c]{2cm}{Coarse\\(Thick)} & \parbox[c]{1cm}{CO\\(TK)} & \numrange{5}{10} & \numrange{50}{< 100} & \numrange{20}{< 50} \\[0.75em]
 \rule{0pt}{1.75em}\parbox[c]{2cm}{Very Coarse\\(Very Thick)} & \parbox[c]{1cm}{VC\\(VK)} & $\geq$\,10 & 100\,to\,\textless\,500 & $\geq$\,50 \\[0.75em]
-\rule{0pt}{1.75em}\rule[-1em]{0pt}{1em}\parbox[c]{2cm}{Extremely Coarse} & \parbox[c]{1cm}{EC\\(\textendash)} & \textendash & $\geq$\,500 & \textendash \\
+\rule{0pt}{1.75em}\rule[-1em]{0pt}{1em}\parbox[c]{2cm}{Extremely Coarse} & \parbox[c]{1cm}{EC\\(\textendash)} & \textendash & \num{\ge 500} & \textendash \\
 \hline
 \end{tabular}
 \end{table}
