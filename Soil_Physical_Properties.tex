@@ -23,21 +23,24 @@
 %+Title
   \title{Soils: Physical Properties}
   \author{Donald G. McGahan\\ Professor Tarleton State University}
-  \date{June 13, 2022}
+  \date{June 17, 2022}
 %-Title
 \begin{document}
 \maketitle
 \section{Introduction}
 \label{introduction}
 
-% TODO populate introductory section.
+% TODO populate introductory section text.
 
-Descriptions of the physical properties of soil include size separates, organization of size separates, density, voids or porosity, consistency, color, and temperature.
+Descriptions of the physical properties of soil include size separates, organization of size separates, density, voids or porosity, color, reaction, effervescence and consistence.  These are properties that can be seen, felt, and tasted.
+
+In this treatment of physical properties of soil, examples of categorizing the information is presented. The categorical classes presented are those used in practice by the United Stated Department of Agriculture (USDA) Soil Survey Division Staff when describing soil. These classes are the data to collate and place soil into a natural classification called \textbf{\textit{Soil Taxonomy}} and numerous other technical classification systems. Therefore, these underlying measurements and the organizing into classes represent the data that is used to convey information about how the soil exists and how it might be leveraged for a plethora of uses.
+
 
 \section{Objectives}
 \label{objectives}
 
-% TODO populate with objectives
+% TODO populate an objectives section.
 
 \section{Organic Soil}
 \label{organic_soil}
@@ -173,9 +176,9 @@ The clay and sand are also subdivided. Memorizing the sand fractions is particul
 The amount of fine clay is particularly important when classifying some soils.
     
 \begin{table}[!htbp]
-\label{tab:sandfractions}
 \centering
 \caption{Table of sand fraction names and size limits.}
+\label{tab:sandfractions}
 \begin{tabular}{|l|c|}
 \hline
 Sand Separate           &  Diameter (mm)\\
@@ -190,9 +193,9 @@ very coarse sand        & 1.00 - 2.00\\
 \end{table}
     
 \begin{table}[!htbp]
-\label{tab:coarsefractionvolume}
 \centering
 \caption{Table of modifier names with the volume of the coarse fraction.}
+\label{tab:coarsefractionvolume}
 \begin{tabular}{|l|c|}
 \hline
 Volume of Coarse Fraction           &  Modifier Name\\
@@ -206,9 +209,9 @@ Volume of Coarse Fraction           &  Modifier Name\\
 \end{table}
     
 \begin{table}[!htbp]
-\label{tab:coarsefractionsizenames}
 \centering
 \caption{Table of coarse fraction separates size increments.}
+\label{tab:coarsefractionsizenames}
 \begin{tabular}{|l|c|}
 \hline
 Volume of Coarse Fraction           &  Modifier Name\\
@@ -280,9 +283,10 @@ The five size class for angular and subangluar blocky and lenticular structure a
 % TODO Revise or Exclude Structure size class table. SO far, this table does not translate to html via pandoc well. Consider revising or presenting in another form.
 
 \begin{table}[!htbp]
-\label{tab:astructuresizeclass}
+
 \centering
 \caption{Structure size classes.}
+\label{tab:structuresizeclass}
 \begin{tabular}{c c c c c}
 \hline
 \rule{0pt}{1.75em}Size Class & Code & \multicolumn{3}{c}{Criteria: Structural unit size (mm)} \\[0.75em] \cline{3-5} 
@@ -364,13 +368,13 @@ Similarly, the proportion of air in the voids is critical to aerobic biologicals
 
 It is appropriate, however, to present a classification of voids based on their effective diameter, or size. The basis of the following classification is soil water\textemdash{}plant relationships.  
 
-\textbf{Macrovoids} are \textgreater{} \qty{75}{\micro\metre} and was chosen utilizing empirical data wherein tensions of $\leq$ \qty{40}{\centi\metre} ($\leq$ \qty{-4}{kPa}) led to greater percolation rates. The emptying of macrovoids also leads to air exchange within the soil.  
+\textbf{\textit{Macrovoids}} are \textgreater{} \qty{75}{\micro\metre} and was chosen utilizing empirical data wherein tensions of $\leq$ \qty{40}{\centi\metre} ($\leq$ \qty{-4}{kPa}) led to greater percolation rates. The emptying of macrovoids also leads to air exchange within the soil.  
 
-\textbf{Mesovoids} are \qtyrange{30}{75}{\micro\metre} are important in transport and distribution of water. Mesovoids together with marcrovoids are contributors to renewal and exchange of air in the soil.  
+\textbf{\textit{Mesovoids}} are \qtyrange{30}{75}{\micro\metre} are important in transport and distribution of water. Mesovoids together with marcrovoids are contributors to renewal and exchange of air in the soil.  
 
-\textbf{Microvoids} \qtyrange{5}{30}{\micro\metre} and \textbf{ultramicrovoids} \qty{0.1}{}\textemdash \qty{5}{\micro\metre} are are voids most responsible for storage of water that is available to plants, as the habitat for microorganisims, and soil fauna.  
+\textbf{\textit{Microvoids}} \qtyrange{5}{30}{\micro\metre} and \textbf{\textit{ultramicrovoids}} \qty{0.1}{}\textemdash \qty{5}{\micro\metre} are are voids most responsible for storage of water that is available to plants, as the habitat for microorganisims, and soil fauna.  
 
-\textbf{Cryptovoids} \textless{} \qty{0.1}{\micro\metre} represent storage of water that is generally unavailable to most plants. They are generally too small for roots and most microorganisms.  
+\textbf{\textit{Cryptovoids}} \textless{} \qty{0.1}{\micro\metre} represent storage of water that is generally unavailable to most plants. They are generally too small for roots and most microorganisms.  
 
 Void connectivity and tortuous paths between void tubules dictates the relative movement and connectivity of the air and water within the soil. Irregular effective diameters are quite common in soils and impede the filing and emptying of the voids.  
 
@@ -461,9 +465,9 @@ Decreasing bulk density promotes porosity. The pores are the voids between the s
 
 Though the porosity is generally greater in a clay soil than a sand soil, the average cross-section of sandy soil matrix voids connected as pores are generally greater than the average cross-section of clay soils. Thus, water and air flow more rapidly through sandy soils and more slowly through soils high in clay. This is owing to the interaction of these fluids and the solids surfaces. \textit{For more on fluid interaction with solids seek a the treatment of water in soils.}
 
-When discussing pores it is frequently useful to group pores by the classes of void diameter(s) where macropores are larger pores with a diameter greater than \textgreater{}\qty[]{0.075}{\milli\metre} and micropores having a diameter \textless{}\qty[]{0.075}{\milli\metre}. The use of void diameters is useful because water and air move relatively rapidly through the voids connected together to become macropores and much slower through smaller voids connected together to become micropores. Still, the continuity of void diameter in soil are generally not linear especially within the microvoids and this inter-connectivity between varying diameter voids impacts the movement of the fluids.
+When discussing pores it is frequently useful to group pores by the classes of void diameter(s) where macro- is applied to voids with a diameter greater than \num{> 0.075}{\milli\metre} and micro- having a diameter \num{< 0.075}{\milli\metre}. The use of void diameters is useful because water and air move relatively rapidly through the voids connected together that are effectively \num{> 0.075}{\milli\metre}\textemdash{}macropores\textemdash{} and much slower through smaller voids connected together that effectively \num{< 0.075}{\milli\metre} and thus then termed  micropores. Still, the continuity of void diameter in soil are generally not linear especially when a portion of the connected voids has a section of microvoids and this inter-connectivity between varying diameter voids impacts the movement of the fluids: air and water.
 
-The matrix pores of sandy soils are dominated more by macrovoids. Clay soils are more dominated by microvoids. Thus, in most instances water and air flow more rapidly through sandy soils and more slowly through soils higher in clay.
+Generally we can infer much from void diameter and textural class as the matrix pores of sandy soils are dominated more by macrovoids. Clay soils are more dominated by microvoids. Thus, in most instances water and air flow more rapidly through sandy soils and more slowly through soils higher in clay.
 
 Pores can also be grouped into three general types in keeping with the types of voids. Interparticle pores are the connected void spaces occurring between the individual soil particles. Interaggregate pores are the connected void space occurring between soil aggregates. Biopores are pores created by biological activity (e.g., roots and earthworms).
 
@@ -494,19 +498,19 @@ One technical classification is very dependent upon the morphology of soil color
 
 Soil drainage class is a way of communicating internal soil drainage conditions together with the depth in the soil that reducing conditions were, or are, prevalent (as determined by soil morphological features). There are seven such classes. The soil is examined to a depth of \qty{150}{\centi\metre}.
 
-\textbf{Excessively drained}: Water is removed very rapidly (gravelly or coarse sand textures). The occurrence of free water is very deep (\textgreater{}\qty{150}{\centi\metre} or 60\,in). Free of mottling related to wetness.
+\textbf{\textit{Excessively drained}}: Water is removed very rapidly (gravelly or coarse sand textures). The occurrence of free water is very deep (\textgreater{}\qty{150}{\centi\metre} or 60\,in). Free of mottling related to wetness.
 
-\textbf{Somewhat excessively drained}: Water is removed from the soil rapidly (sands and loamy sand textures). The occurrence of free water commonly is very deep (\textgreater{}\qty{150}{\centi\metre} or 60\,in). Free of mottling related to wetness.
+\textbf{\textit{Somewhat excessively drained}}: Water is removed from the soil rapidly (sands and loamy sand textures). The occurrence of free water commonly is very deep (\textgreater{}\qty{150}{\centi\metre} or 60\,in). Free of mottling related to wetness.
 
-\textbf{Well drained}: Water is removed readily but not rapidly. Free water occurrence is deep (\textgreater{}\qty{150}{\centi\metre} or 60\,in). Well drained soils are generally free of mottles related to wetness in the upper \qty{150}{\centi\metre} (or 60\,in). There may be mottles deeper in the soil profile.
+\textbf{\textit{Well drained}}: Water is removed readily but not rapidly. Free water occurrence is deep (\textgreater{}\qty{150}{\centi\metre} or 60\,in). Well drained soils are generally free of mottles related to wetness in the upper \qty{150}{\centi\metre} (or 60\,in). There may be mottles deeper in the soil profile.
 
-\textbf{Moderately well drained}: Water is removed from the soil somewhat slowly during some periods of the year. Free water occurrence is moderately deep (\qtyrange{50}{100}{\centi\metre}) and transitory (\numrange{1}{3} months) to permanent (continuous). The soils are wet for only a short time within the rooting depth during the growing season. Moderately well drained soils may have mottles below a depth of \qty{50}{\centi\metre} (about\,20 in.). It is common for moderately well drained soils to have a slowly permeable layer within or immediately beneath the solum or a relatively high water table.
+\textbf{\textit{Moderately well drained}}: Water is removed from the soil somewhat slowly during some periods of the year. Free water occurrence is moderately deep (\qtyrange{50}{100}{\centi\metre}) and transitory (\numrange{1}{3} months) to permanent (continuous). The soils are wet for only a short time within the rooting depth during the growing season. Moderately well drained soils may have mottles below a depth of \qty{50}{\centi\metre} (about\,20 in.). It is common for moderately well drained soils to have a slowly permeable layer within or immediately beneath the solum or a relatively high water table.
 
-\textbf{Somewhat poorly drained}: Water is removed slowly so that the soil is wet at a shallow depth for significant periods during the growing season. The occurrence of free water is shallow (\qtyrange{25}{50}{\centi\metre} or 10 to 20\,in.) and transitory (1 to 3 months) or common (present 3 to 6 months). Wetness markedly restricts the growth of many common crop plants unless artificial drainage is provided. They commonly have a high water table, and mottles occur below a depth of \qty{25}{\centi\metre} (about 10\,in.). These soils often have thick dark A horizons high in organic matter.
+\textbf{\textit{Somewhat poorly drained}}: Water is removed slowly so that the soil is wet at a shallow depth for significant periods during the growing season. The occurrence of free water is shallow (\qtyrange{25}{50}{\centi\metre} or 10 to 20\,in.) and transitory (1 to 3 months) or common (present 3 to 6 months). Wetness markedly restricts the growth of many common crop plants unless artificial drainage is provided. They commonly have a high water table, and mottles occur below a depth of \qty{25}{\centi\metre} (about 10\,in.). These soils often have thick dark A horizons high in organic matter.
 
-\textbf{Poorly drained}: Water is removed so slowly that the soil is wet at shallow depths periodically during the growing season or remains wet for long periods. The occurrence of free water is shallow or very shallow (\textless{}\qty{25}{\centi\metre} about 10 in.) and common (\numrange{3}{6} months) or persistent (6 through 12 months). Free water is commonly at or near the surface long enough during the growing season so that mesophytic crops cannot be grown without artificial drainage. These soils are commonly gleyed rather than redoximorphic  because they remain anoxic for long periods.
+\textbf{\textit{Poorly drained}}: Water is removed so slowly that the soil is wet at shallow depths periodically during the growing season or remains wet for long periods. The occurrence of free water is shallow or very shallow (\textless{}\qty{25}{\centi\metre} about 10 in.) and common (\numrange{3}{6} months) or persistent (6 through 12 months). Free water is commonly at or near the surface long enough during the growing season so that mesophytic crops cannot be grown without artificial drainage. These soils are commonly gleyed rather than redoximorphic  because they remain anoxic for long periods.
 
-\textbf{Very poorly drained}: Water is removed from the soil so slowly that free water remains at or very near the ground surface during much of the growing season. The occurrence of free water is very shallow and persistent or permanent.
+\textbf{\textit{Very poorly drained}}: Water is removed from the soil so slowly that free water remains at or very near the ground surface during much of the growing season. The occurrence of free water is very shallow and persistent or permanent.
 
 \section{Consistence}
 \label{consistence}
@@ -515,14 +519,57 @@ Soil consistence is dependent upon moisture content and consequently is measured
 
 Principle to the outcome of soil consistence classes reported for soil is the soil cohesion and adhesion and resistance to deformation and/or rupture. The classes include rupture resistance class, plasticity class, toughness class, and stickiness class.
 
-\textbf{\textit{Rupture Resistance}} classes span from \textit{loose} for cohesion-less soils include courser textures sand and loamy sand that are loose and progress though successively greater force being applied. These field tests begin with determination of failure when a quantitative force is applied between thumb and forefinger and progresses to force applied between hands to force exerted underfoot to the force being a blow as being \textit{very rigid}.
+\textbf{Rupture Resistance} classes span from \textit{loose} for cohesion-less soils include courser textures sand and loamy sand that are loose and progress though successively greater force being applied. These field tests begin with determination of failure when a quantitative force is applied between thumb and forefinger and progresses to force applied between hands to force exerted underfoot to the force being a blow as being \textit{very rigid}.
 
-\textbf{\textit{Plasticity Class}} is determined on "puddled" soil at the water content that yields the maximum plasticity. Thus plasticity is the degree of permanent deformation the soil can exhibit without rupturing. Soil is formed into rolls \qty{4}{cm} long and \qty{6}{cm}, \qty{4}{cm}, or \qty{2}{cm} in diameter. The classes are \textit{nonplastic}, \textit{slightly plastic}, \textit{moderately plastic}, or \textit{very plastic}.
+\textbf{Plasticity Class} is determined on "puddled" soil at the water content that yields the maximum plasticity. Thus plasticity is the degree of permanent deformation the soil can exhibit without rupturing. Soil is formed into rolls \qty{4}{cm} long and \qty{6}{cm}, \qty{4}{cm}, or \qty{2}{cm} in diameter. The classes are \textit{nonplastic}, \textit{slightly plastic}, \textit{moderately plastic}, or \textit{very plastic}.
 
-\textbf{\textit{Toughness Class}}, \textit{low},  \textit{medium}, or \textit{high} based on the force necessary to form a \qty{3}{milli\metre} roll with the fingers.
+\textbf{Toughness Class}, \textit{low},  \textit{medium}, or \textit{high} based on the force necessary to form a \qty{3}{milli\metre} roll with the fingers.
 
- \textbf{\textit{Stickiness Class}} is, not surprisingly, categorizing soil ability to adhere to other objects. Similar to the plasticity and toughness classes determinations the determination is made on the water content at which the soil is most sticky. The four classes are \textit{nonsticky}, \textit{slightly sticky}, \textit{moderately sticky}, and \textit{very sticky}.
+ \textbf{Stickiness Class} is, not surprisingly, categorizing soil ability to adhere to other objects. Similar to the plasticity and toughness classes determinations the determination is made on the water content at which the soil is most sticky. The four classes are \textit{nonsticky}, \textit{slightly sticky}, \textit{moderately sticky}, and \textit{very sticky}.
+ 
+ \section{Reaction}
+\label{reaction}
 
-% DGM An appropriate add-on as an appendix or supplement would be definitions for each of the classes. Not sure about them being presented as a definition list or tabular.
+Soil reaction is a way of communicating soil pH. Today it is generally inadvisable to place soil in the mouth, but the human pallet is quite adept at determine various levels of sourness–increased acidity–and chalkiness–increased alkalinity. The pH today can be readily measured digitally with inexpensive handheld meters. The soil reaction classes pH ranges are presented in Table \ref{tab:reactionclass}.
+
+\begin{table}[!htbp]
+\centering
+\caption{Table of soil reaction class terms and the corresponding ranges in pH.}
+\label{tab:reactionclass}
+\begin{tabular}{ll}
+\hline
+Class term             & pH range         \\
+\hline \hline
+Ultra acid             & \textless 3.5    \\
+Extremely acid         & 3.5–4.4          \\
+Very strongly acid     & 4.5–5.0          \\
+Strongly acid          & 5.1–5.5          \\
+Moderately acid        & 5.6–6.0          \\
+Slightly acid          & 6.1–6.5          \\
+Neutral                & 6.6–7.3          \\
+Slightly alkaline      & 7.4–7.8          \\
+Moderately alkaline    & 7.9–8.4          \\
+Strongly alkaline      & 8.5–9.0          \\
+Very strongly alkaline & \textgreater 9.0 \\
+\hline
+\end{tabular}
+\end{table}
+
+% Donald G. McGahan: Reaction section is to be populated by an ever-so-brief description of reaction as  historically discernible as sour versus chalky when placed in the mouth. Today placing soil in ones mouth is generally discouraged and there are relatively inexpensive ways to determine reaction class that are also more amenable to placing the soil in more classes that have more interpretive meaning. 
+
+% Donald G McGahan: Reaction section will also hint that more detail is warranted and to expect more detail in the Chemical and Mineralogy Book/Chapter.
+ 
+ \section{Effervescence}
+ \label{effervescence}
+ 
+ % Donald G McGahan: How to determine while describing a soil and the classes presented in in succinct fassion.
+
+
+
+% Postscript content
+
+% Donald G McGahan: An possible add-on as an appendix, or supplement, would be definitions for each of the consistence classes. Not sure about them being presented as a definition list or tabular. This would not be necessary to learners at all institutions but some might find the inclusion helpful.
+
+% DGM ToDo Example study questions construction is a potential add-on. The down side is that as of 2022 the propensity for the solutions to such questions on study boards negates there effectiveness. 
 
 \end{document}
