@@ -181,9 +181,9 @@ In an introductory soils course students are responsible for the size limits of 
 The clay and sand are also subdivided. Memorizing the sand fractions is particularly useful since these sizes often show up in names of soil map units. Soil map units convey information about patterns of spatial variability across the landscape. Additionally, in more advanced courses students are typically asked to be responsible for the size limits of the fine silt and coarse silt, and occasionally even the clay which is fractionated into:
     
 \begin{itemize}
-    \item fine clay $\left( < 0.00008\, mm \right)$ or $\left( < 0.08\, \mu m \right)$
-    \item medium clay $\left(0.0002\, \text{to}\, 0.00008\, mm \right)$, or $\left(0.02 \mu m\,\text{to}\,0.08\, \mu m \right)$
-    \item coarse clay $\left(0.002\, \mu m\, \text{to}\, 0.0002\, mm\right)$, or $\left(2\, \mu m\,\text{to}\,\mu m \right)$
+    \item fine clay \qty{< 0.00008}{mm}, or \qty{< 0.08}{\micro\meter}
+    \item medium clay \qtyrange{0.00008}{0.0002}{mm}, or \qtyrange{0.08}{0.02}{\micro\meter}
+    \item coarse clay \qtyrange{0.0002}{0.002}{mm}, or \qtyrange{0.02}{2}{\micro\meter}
 \end{itemize}
     
 The amount of fine clay is particularly important when classifying some soils.
@@ -204,6 +204,8 @@ very coarse sand & 1.00 – 2.00   \\
 \end{tabular}
 \end{table}
 
+% dig-soilman: Markdown table rendering below of the above table.
+% Table of coarse fraction (CF) content volume percentage and modifier names.
 %| Sand Separate    | Diameter (mm) |
 %|------------------|---------------|
 %| very fine sand   | 0.05 – 0.10   |
@@ -227,12 +229,13 @@ very coarse sand & 1.00 – 2.00   \\
 \end{tabular}
 \end{table}
 
-%| % Volume of CF | Modifier Name                          |
-%|----------------|----------------------------------------|
-%| 0-15           | no modifier                            |
-%| 15-35          | gravelly, cobbly, stony, or bouldery   |
-%| 35-60          | add very e.g. very gravelly            |
-%| > 60           | add extremely e.g. extremely gravelly  |
+% dig-soilman: Markdown table rendering below of the above table.
+% Table of coarse fraction (CF) content volume percentage and modifier names.
+% | % Volume of CF | Modifier Name                          |
+% |----------------|----------------------------------------|
+% | 0-15           | no modifier                            |
+% | 15-35          | gravelly, cobbly, stony, or bouldery   |
+% | > 60           | add extremely e.g. extremely gravelly  |
     
 \begin{table}[!htbp]
 \centering
@@ -249,6 +252,7 @@ Boulder     & \textgreater{}600 mm \\
 \end{tabular}
 \end{table}
 
+% dig-soilman: Markdown table rendering below of the above table.
 % Table of coarse fraction separates size increments.
 %|   Name  | Size       |
 %|---------|------------|
@@ -280,7 +284,7 @@ Granular and blocky structural types are roughly equidistant side to sided and t
 
 Wedge type structure is elliptical and terminate at acute angles, often \ang{30}, or \ang{60}, with slickenside bounding edges. While the wedge structure type does not require the soil be a U.S. Soil Taxonomy Vertisol Order, the Vertisol Order, and Vertic taxonomic subgroups must include wedge type structure.
 
-Lenticular type structure is overlapping, lens-shaped peds that are  generally parallel to the soil surface that are thick at the center and taper toward the edges and are formed by active or relict periglacial frost processes. Most common in soils with moderate to high water-holding capacity in moist conditions.
+Lenticular type structure is overlapping, lens-shaped peds that are  generally parallel to the soil surface that are thick at the center and taper toward the edges and are formed by active or relic periglacial frost processes. Most common in soils with moderate to high water-holding capacity in moist conditions.
 
 Platy type structure are flat plate like units that are wider than tall.
 
@@ -316,7 +320,6 @@ The five size class for angular and subangluar blocky and lenticular structure a
 % TODO Revise or Exclude Structure size class table. SO far, this table does not translate to html via pandoc well. Consider revising or presenting in another form.
 
 \begin{table}[!htbp]
-
 \centering
 \caption{Structure size classes.}
 \label{tab:structuresizeclass}
@@ -343,7 +346,7 @@ Increasing sodium tends to speed structure degradation. The sodium interacts wit
 \section{Density}
 \label{density}
     
-Solids Density $\left(\rho_s\right)$ is the density of the solid soil particles only in units of mass per volume e.g., $\left(\unit{\gram\per\cubic\centi\metre}\right)$. Often in texts the greek letter rho  is a shorthand symbol for density and s is for solids.
+Solids Density $\left(\rho_s\right)$ is the density of the solid soil particles only in units of mass per volume e.g., (\unit{\gram\per\cubic\centi\metre}). Often in texts the greek letter rho  is a shorthand symbol for density and s is for solids.
 
 \begin{equation}
     Particle\,Density = \left(\frac{Weight\,of\,Solids}{Volume\,of\,Solids}\right)   
@@ -527,7 +530,7 @@ This section on color started by stating that there are 'inferences' derived fro
 One technical classification is very dependent upon the morphology of soil color and in particular redox. The reduction of iron and manganese under reducing conditions, such as saturation with water in warm conditions, results in them being  transported (are more mobile when reduced) and reoxidized when the water drains. These patterns of depleted areas interspersed with areas displaying oxidized iron (rubified) and manganese (brown colored) indicate, or are interpreted as, arising from a fluctuating water table. The depth at which these redoximorphic features occur together with the timing and length of saturation leads to \textbf{drainage class}.
  
 \subsection{Soil Drainage Classes}
-\label{soildrainageclasses}
+\label{drainageclasses}
 
 Soil drainage class is a way of communicating internal soil drainage conditions together with the depth in the soil that reducing conditions were, or are, prevalent (as determined by soil morphological features). There are seven such classes. The soil is examined to a depth of \qty{150}{cm}.
 
@@ -560,7 +563,9 @@ Principle to the outcome of soil consistence classes reported for soil is the so
 
  \textbf{Stickiness Class} is, not surprisingly, categorizing soil ability to adhere to other objects. Similar to the plasticity and toughness classes determinations the determination is made on the water content at which the soil is most sticky. The four classes are \textit{nonsticky}, \textit{slightly sticky}, \textit{moderately sticky}, and \textit{very sticky}.
  
- \section{Reaction}
+ % dig-soilman:: A possible add-on as an appendix, supplement, or another document would be definitions for each of the consistence classes. Not sure about them being presented as a definition list or tabular. This would not be necessary to learners at all institutions but some might find the inclusion helpful.
+ 
+\section{Reaction}
 \label{reaction}
 
 Soil reaction is a way of communicating soil pH. Today it is generally inadvisable to place soil in the mouth, but the human pallet is quite adept at determine various levels of sourness–increased acidity–and chalkiness–increased alkalinity. The pH today can be readily measured digitally with inexpensive handheld meters. The soil reaction classes pH ranges are presented in Table \ref{tab:reactionclass}.
@@ -571,8 +576,7 @@ Soil reaction is a way of communicating soil pH. Today it is generally inadvisab
 \label{tab:reactionclass}
 \begin{tabular}{ll}
 \hline
-Class term             & pH range         \\
-\hline \hline
+Class term             & pH range         \\ \hhline{==}
 Ultra acid             & \textless 3.5    \\
 Extremely acid         & 3.5–4.4          \\
 Very strongly acid     & 4.5–5.0          \\
@@ -588,14 +592,30 @@ Very strongly alkaline & \textgreater 9.0 \\
 \end{tabular}
 \end{table}
 
-% Donald G. McGahan: Reaction section is to be populated by an ever-so-brief description of reaction as  historically discernible as sour versus chalky when placed in the mouth. Today placing soil in ones mouth is generally discouraged and there are relatively inexpensive ways to determine reaction class that are also more amenable to placing the soil in more classes that have more interpretive meaning. 
+% dig-soilman: Below is a markdown table format corresponding to the above LaTeX table.
+% Table of soil reaction class terms and the corresponding ranges in pH.
+% | Class term             | pH range |
+% |------------------------|----------|
+% | Ultra acid             |  < 3.5   |
+% | Extremely acid         | 3.5–4.4  |
+% | Very strongly acid     | 4.5–5.0  |
+% | Strongly acid          | 5.1–5.5  |
+% | Moderately acid        | 5.6–6.0  |
+% | Slightly acid          | 6.1–6.5  |
+% | Neutral                | 6.6–7.3  |
+% | Slightly alkaline      | 7.4–7.8  |
+% | Moderately alkaline    | 7.9–8.4  |
+% | Strongly alkaline      | 8.5–9.0  |
+% | Very strongly alkaline |  > 9.0   |
 
-% Donald G McGahan: Reaction section will also hint that more detail is warranted and to expect more detail in the Chemical and Mineralogy Book/Chapter.
+% dig-soilman:: Reaction section is to be populated by an ever-so-brief description of reaction as  historically discernible as sour versus chalky when placed in the mouth. Today placing soil in ones mouth is generally discouraged and there are relatively inexpensive ways to determine reaction class that are also more amenable to placing the soil in more classes that have more interpretive meaning. 
+
+% dig-soilman:: Reaction section will also hint that more detail is warranted and to expect more detail in the Chemical and Mineralogy Book/Chapter.
  
  \section{Effervescence}
  \label{effervescence}
  
- % Donald G McGahan: How to determine while describing a soil and the classes presented in in succinct fashion.
+ % dig-soilman:: How to determine while describing a soil and the classes presented in in succinct fashion.
 
 A common description in soils of simiarid and arid landscapes is that of \textit{effervescence}. Carbonates of divalent cations, primarily calcium carbonate, effervesce when 1-normal hydrochloric acid (1N HCl) is applied. The relative strength of effervescence is classed and the classes and criteria are presented in Table \ref{tab:effervescenceclasses}.
 
@@ -603,12 +623,11 @@ Calcium carbonate content can increase alkalinity, increase color value, and eve
 
 \begin{table}[!htbp]
 \centering
-\caption{Table of Effervescence Classes and Criteria}
+\caption{Table of Effervescence Classes and Criteria.}
 \label{tab:effervescenceclasses}
 \begin{tabular}{ll}
 \hline
-Effervescence Class         & Criteria                          \\
-\hline \hline
+Effervescence Class         & Criteria                          \\ \hhline{==}
 Noneffervescent             & No Bubbles form                   \\
 Very slightly effervescent  & Few bubbles form                  \\
 Slightly effervescent       & Numerous bubbles foam             \\
@@ -618,12 +637,19 @@ Violently effervescent      & Bubbles quickly form a thick foam \\
 \end{tabular}
 \end{table}
 
+% dig-soilman: Below is a markdown table format corresponding to the above LaTeX table.
+% Table of Effervescence Classes and Criteria
+% | Effervescence Class        | Criteria                          |
+% |----------------------------|-----------------------------------|
+% | Noneffervescent            | No Bubbles form                   |
+% | Very slightly effervescent | Few bubbles form                  |
+% | Slightly effervescent      | Numerous bubbles foam             |
+% | Strongly effervescent      | Bubbles form a low foam           |
+% | Violently effervescent     | Bubbles quickly form a thick foam |
 
 % Postscript content
 
-% Donald G McGahan: An possible add-on as an appendix, or supplement, would be definitions for each of the consistence classes. Not sure about them being presented as a definition list or tabular. This would not be necessary to learners at all institutions but some might find the inclusion helpful.
-
-% DGM ToDo Example study questions construction is a potential add-on. The down side is that as of 2022 the propensity for the solutions to such questions on study boards negates there effectiveness. 
+% dig-soilman: ToDo Example study questions construction is a potential add-on. The down side is that as of 2022 the propensity for the solutions to such questions on study boards negates there effectiveness. Consequently dig-soilman favors NOT adding study questions directly to the end of the document and instead expects instructors leveraging the document to create there own.
 
 \appendix
 \chapter{First and only appendix}
