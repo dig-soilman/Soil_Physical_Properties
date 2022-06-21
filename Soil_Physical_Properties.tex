@@ -4,6 +4,15 @@
 \usepackage[a5paper, inner=1.5cm, outer=1.5cm, top=1.75cm, bottom=1.5cm]{geometry} % this will be half an A4 and is thought that it might be better presented on smartphones
 \usepackage{amsmath} % provides miscellaneous enhancements for improving the information structure and printed output of documents containing mathematical formulas 
 \usepackage{amsfonts,amssymb} % amssymb provides an extended symbol collection and internally loads amsfonts Computer Modern font plus a set of miscellaneous TeX fonts that augment the standard Computer Modern set
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
 \usepackage{graphicx} % show images
 \usepackage{multirow} % for multirow in tables
 \usepackage{hhline} % for double lines without interrupting table vertical lines
@@ -30,12 +39,15 @@
 \maketitle
 
 \frontmatter
-\chapter{Dedication}
+
 \chapter{Copyright}
-\chapter{Acknowledgements}
+
+The Soil Physical Properties by Donald G. McGahan is licensed under a \href{https://creativecommons.org/licenses/by-nc-sa/4.0/}{Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)} 
+
 \tableofcontents
 \listoffigures
 \listoftables
+
 \mainmatter
 \chapter{Physical Properties}
 \section{Introduction}
@@ -313,7 +325,7 @@ Soil structure may exist as a compound structure in which large peds may further
     
 Size is conveyed in such a way that the peds narrowest dimension  determines the size class for each type. Size classes for granular, angular blocky, sub-angular blocky, lenticular, wedge, prismatic, and columnar structure types are \emph{very fine}, \emph{fine}, \emph{medium}, \emph{coarse}, and \emph{very coarse}. For the platy structure type \emph{thin} is substituted for \emph{fine} and \emph{thick} is substituted for \emph{coarse} size class names.
 
-The five size classes for granular and platy structures are \qty{< 1}{mm}, \qtyrange{1}{< 2}{mm}, \qtyrange{2}{< 5}{mm}, \qtyrange{5}{< 10}{mm}, and \qty{\geq 10}{mm}.
+The five size classes for granular and platy structures are \qty{< 1}{\milli\meter}, \qtyrange{1}{< 2}{\milli\meter}, \qtyrange{2}{< 5}{\milli\meter}, \qtyrange{5}{< 10}{\milli\meter}, and \qty{\geq 10}{\milli\meter}.
 
 The six size classes for columnar, prismatic, wedge are \qty{< 10}{mm}, \qtyrange{10}{< 20}{mm}, \qtyrange{20}{< 50}{mm}, \qtyrange{100}{< 500}{mm}, and \qty{\ge 500}{mm}. Note that these structures have this additional larger size class of extremely coarse.
 
@@ -450,19 +462,19 @@ This can be simplified to:
     \end{aligned}
 \end{equation}
 
-It can be challenging to determine the $V_v$ when the relative proportions of $V_a$ and $V_w$ are unknown. When $V_a = 0$ the soil is saturated. Saturating a known total volume $\left(V_t\right)$  such as a core extracted from a soil and massing the saturated soil is useful because the density of water, its specific gravity, is know to be \qty{1}{\gram\per\cubic\centi\metre}. Since $V_a=0$ then $V_w=V_v$. The same sample can then have the water driven off by heating in a $\qty{110}{\degreeCelsius}$ oven until it no longer reduces in mass and the difference in mass equates to a volume of voids $\left(V_v\right)$ that the water occupied. This is useful because the particle density does not have to be measured.
+It can be challenging to determine the $V_v$ when the relative proportions of $V_a$ and $V_w$ are unknown. When $V_a = 0$ the soil is saturated. Saturating a known total volume $\left(V_t\right)$  such as a core extracted from a soil and massing the saturated soil is useful because the density of water, its specific gravity, is know to be \qty[per-mode = symbol]{1}{\gram\per\cubic\centi\metre}. Since $V_a=0$ then $V_w=V_v$. The same sample can then have the water driven off by heating in a \qty{110}{\degreeCelsius} oven until it no longer reduces in mass and the difference in mass equates to a volume of voids $\left(V_v\right)$ that the water occupied. This is useful because the particle density does not have to be measured.
 
-Another estimate of porosity can be derived if the average solids density $\left(\rho_s\right)$ is known or estimated. Estimation of average solids density is frequently employed as a first estimate. Estimating average solids density is guided by empirical evidence and assumption that the dominate soil minerals might be quartz, feldspars, micas, and secondary clays. The solids density of \qty{2.65}{\gram\per\cubic\centi\metre} is most frequently adopted when the average solids density is not measured.
+Another estimate of porosity can be derived if the average solids density $\left(\rho_s\right)$ is known or estimated. Estimation of average solids density is frequently employed as a first estimate. Estimating average solids density is guided by empirical evidence and assumption that the dominate soil minerals might be quartz, feldspars, micas, and secondary clays. The solids density of \qty[per-mode = symbol]{2.65}{\gram\per\cubic\centi\metre} is most frequently adopted when the average solids density is not measured.
 
 The quotient of bulk density $\left(\rho_b\right)$ to solids density $\left(\rho_s\right)$ for soil should always be a value less than one and represents the fraction of the whole soil that is occupied by the solids. When subtracted from the whole the quotient of bulk density to solids density will yield the fraction of the whole soil that is voids.
 
 \begin{equation}
     \eta =\left(1-\frac{\rho_{\text{b}}}{\rho_{\text{s}}}\right)
     \begin{aligned}
-        \text{where:}\\
-        \eta &= \text{porosity or void fraction of the whole }\\
-        \rho_b &= \text{density of bulk soil}\\
-        \rho_s &= \text{density of solids}\\
+        \text{where:}                                            \\
+        \eta &= \text{porosity or void fraction of the whole }.  \\
+        \rho_b &= \text{density of bulk soil}                    \\
+        \rho_s &= \text{density of solids}                       \\
         1 &= \text{the whole}
     \end{aligned}
 \end{equation}
@@ -472,10 +484,10 @@ Porosity as a percent:
 \begin{equation}
     \%\,\eta =\left(1-\frac{\rho_{\text{b}}}{\rho_{\text{s}}}\right) \times 100
     \begin{aligned}
-        \text{where:}\\
-        \eta &= \text{porosity or void fraction of the whole }\\
-        \rho_b &= \text{density of bulk soil}\\
-        \rho_s &= \text{density of solids}\\
+        \text{where:}                                                            \\
+        \eta &= \text{porosity or void fraction of the whole }                   \\
+        \rho_b &= \text{density of bulk soil}                                    \\
+        \rho_s &= \text{density of solids}                                       \\
         1 &= \text{the whole}
     \end{aligned}
 \end{equation}
@@ -492,10 +504,10 @@ Porosity and bulk density are inversely related and can be related with maths as
 \begin{equation}
     \eta \, \frac{1}{\propto} \, \rho_b
     \begin{aligned}
-        \text{where:}\\
-        \eta &= \text{porosity or void fraction of the whole }\\
-        \rho_b &= \text{density of bulk soil}\\
-        \propto &= \text{proportional to}\\
+        \text{where:}                                          \\
+        \eta &= \text{porosity or void fraction of the whole } \\
+        \rho_b &= \text{density of bulk soil}                  \\
+        \propto &= \text{proportional to}                      \\
         \frac{1}{\propto} &= \text{inversely proportional to}
     \end{aligned}
 \end{equation}
@@ -504,7 +516,7 @@ Decreasing bulk density promotes porosity. The pores are the voids between the s
 
 Though the porosity is generally greater in a clay soil than a sand soil, the average cross-section of sandy soil matrix voids connected as pores are generally greater than the average cross-section of clay soils. Thus, water and air flow more rapidly through sandy soils and more slowly through soils high in clay. This is owing to the interaction of these fluids and the solids surfaces. \textit{For more on fluid interaction with solids seek a the treatment of water in soils.}
 
-When discussing pores it is frequently useful to group pores by the classes of void diameter(s) where macro- is applied to voids with a diameter greater than \num{> 0.075}{mm} and micro- having a diameter \num{< 0.075}{mm}. The use of void diameters is useful because water and air move relatively rapidly through the voids connected together that are effectively \num{> 0.075}{mm}\textemdash{}macropores\textemdash{} and much slower through smaller voids connected together that effectively \num{< 0.075}{mm} and thus then termed  micropores. Still, the continuity of void diameter in soil are generally not linear especially when a portion of the connected voids has a section of microvoids and this inter-connectivity between varying diameter voids impacts the movement of the fluids: air and water.
+When discussing pores it is frequently useful to group pores by the classes of void diameter(s) where macro- is applied to voids with a diameter greater than \num{> 0.075}{mm} and micro- having a diameter \num{< 0.075}{mm}. The use of void diameters is useful because water and air move relatively rapidly through the voids connected together that are effectively \num{> 0.075}{mm}\textemdash{}macropores\textemdash{}and much slower through smaller voids connected together that effectively \num{< 0.075}{mm} and thus then termed  micropores. Still, the continuity of void diameter in soil are generally not linear especially when a portion of the connected voids has a section of microvoids and this inter-connectivity between varying diameter voids impacts the movement of the fluids: air and water.
 
 Generally we can infer much from void diameter and textural class as the matrix pores of sandy soils are dominated more by macrovoids. Clay soils are more dominated by microvoids. Thus, in most instances water and air flow more rapidly through sandy soils and more slowly through soils higher in clay.
 
@@ -654,8 +666,9 @@ Violently effervescent      & Bubbles quickly form a thick foam \\
 
 % dig-soilman: ToDo Example study questions construction is a potential add-on. The down side is that as of 2022 the propensity for the solutions to such questions on study boards negates there effectiveness. Consequently dig-soilman favors NOT adding study questions directly to the end of the document and instead expects instructors leveraging the document to create there own.
 
-\appendix
-\chapter{First and only appendix}
+% \appendix
+% \chapter{First and only appendix}
+
 \backmatter
 \chapter{Bibliography}
 
