@@ -10,7 +10,7 @@
 \usepackage{array}
 \graphicspath{ {images/} } % Path relative to the .tex file containing the \includegraphics command
 \usepackage{siunitx} % comprehensive (si) units package and overleaf chokes on [=v3]
-\usepackage[version=4]{mhchem} % provides commands for typesetting chemical molecular formulae and equations
+% \usepackage[version=4]{mhchem} % provides commands for typesetting chemical molecular formulae and equations. Using siunitx instead of mhchem
 % begin itemize and enumerate formatting
 \usepackage{enumitem} % Control layout of itemize, enumerate, description
 \setlist{nolistsep} % removes space between list and enumerate items
@@ -111,6 +111,8 @@ It is important to note that the sand, silt, and clay mass proportions represent
 \begin{center}
 Sand\% + Silt\% + Clay\% = 100\%
 \end{center}
+    
+% ToDo dig-soilman: Find a TiKz coded rendering of the Gibbs Diagram Textural Triangle
     
 \begin{figure*}
     \centering
@@ -371,16 +373,16 @@ Bulk Density $\left(\rho_b\right)$ is a measure of the weight of the soil per un
 For maths treatment:
 
 \begin{equation}
-    \rho_b = \frac{M_s}{V_t}\quad\\
+    \rho_b = \frac{M_s}{V_t}\quad.    \\
     \begin{aligned}
-    \text{where:}\\
+    \text{where:}.                    \\
         \rho_b &= \text{density bulk} \\
-        M_s &= \text{mass of solids} \\
-        V_t &= \text{volume total} \\
+        M_s &= \text{mass of solids}  \\
+        V_t &= \text{volume total}    \\
     \end{aligned}
 \end{equation}
 
-The $\rho_b$ values for most mineral (inorganic) soils are $\ce{1.20 to 1.40 \frac{g}{cm^3}}$ and for organic soils $\ce{0.10 to 0.25 \frac{g}{cm^3}}$. Recall that the specific gravity (density) of water, at STP, is $\ce{1.00 \frac{g}{cm^3}}$.
+The $\rho_b$ values for most mineral (inorganic) soils are \qtyrange[range-units = single]{1.20}{1.40}{\gram\per\cubic\cm} and for organic soils \qtyrange[range-units = single]{0.10}{0.25}{\gram\per\cubic\centi\meter}. Recall that the specific gravity (density) of water, at STP, is \qty[per-mode = fraction]{1.00}{\gram\per\cubic\centi\meter}.
 
 Bulk Density is affected by:
 \begin{itemize}
@@ -480,7 +482,8 @@ Porosity as a percent:
 
 Example:
 
-What is the percent porosity of a soil where $\rho_b = \ce{\frac{1.80\,g}{cm^3}}$ and $\rho_s = \ce{\frac{2.65\,g}{cm^3}}$ ? $\%\,\eta = 32$
+What is the percent porosity of a soil where $\rho_b = \qty[per-mode = fraction]{1.80}{\gram\per\cubic\centi\meter}$ and $\rho_s = \qty[per-mode = fraction]{2.65}{\gram\per\cubic\centi\meter} ?$ \\
+$\%\,\eta = 32$
 
 Porosity varies with texture, structure, and bulk density. Soils with more clay tend to have greater porosity than soils where sands dominate the size separates.
 
@@ -656,6 +659,13 @@ Violently effervescent      & Bubbles quickly form a thick foam \\
 \backmatter
 \chapter{Bibliography}
 
+Soil Survey Staff. 1999. Soil taxonomy: A basic system of soil classification for making and interpreting soil surveys. 2nd edition. Natural Resources Conservation Service. U.S. Department of Agriculture Handbook 436.
+
+Soil Survey Staff. 2014. Keys to soil taxonomy, 12th edition. USDA Natural Resources Conservation Services.
+
+Soil Survey Staff. 2017. Soil survey manual. C. Ditzler, K. Scheffe, and H. C. Monger (eds). USDA Handbook 18. Government Printing Office, Washington, D.C.
+
+Thein, S. J. 1979. A flow diagram for teaching texture-by-feel analysis. J. Agron. Edu. 8:54-55.
 
 \chapter{Other titles in this collection}
 
