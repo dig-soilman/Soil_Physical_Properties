@@ -1,14 +1,15 @@
-% The eventual copyright will be Donald G. McGahan 2022 v. 01 Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) and this needs to be incorporated into the docuemnt in the title page and then perhaps in a footer?
-\documentclass[]{book}
+% The eventual copyright will be Donald G. McGahan 2022 v. 01 Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) and this needs to be incorporated into the document in the title page and then perhaps in a footer?
+\documentclass{book}
 \usepackage[utf8]{inputenc}
 \usepackage[a5paper, inner=1.5cm, outer=1.5cm, top=1.75cm, bottom=1.5cm]{geometry} % this will be half an A4 and is thought that it might be better presented on smartphones
 \usepackage{amsmath} % provides miscellaneous enhancements for improving the information structure and printed output of documents containing mathematical formulas 
 \usepackage{amsfonts,amssymb} % amssymb provides an extended symbol collection and internally loads amsfonts Computer Modern font plus a set of miscellaneous TeX fonts that augment the standard Computer Modern set
 \usepackage{graphicx} % show images
 \usepackage{multirow} % for multirow in tables
+\usepackage{hhline} % for double lines without interrupting table vertical lines
 \usepackage{array}
 \graphicspath{ {images/} } % Path relative to the .tex file containing the \includegraphics command
-\usepackage[=v3]{siunitx} % comprehensive (si) units package and overleaf chokes on [=v3]
+\usepackage{siunitx} % comprehensive (si) units package and overleaf chokes on [=v3]
 \usepackage[version=4]{mhchem} % provides commands for typesetting chemical molecular formulae and equations
 % begin itemize and enumerate formatting
 \usepackage{enumitem} % Control layout of itemize, enumerate, description
@@ -177,7 +178,7 @@ Note that the silt fraction is further separated into fine and coarse. The silt 
 
 In an introductory soils course students are responsible for the size limits of the coarse fraction and fine earth fraction. Within the fine earth fraction introductory soils course students are responsible for the size limits of clay, silt, and sand.
 
-The clay and sand are also subdivided. Memorizing the sand fractions is particularly useful since these sizes often show up in names of soil map units. Soil map units convey information about patterns of spatial variability across the landscape. Additionally, in more advanced courses students are typically asked to be responsible for the size limits of the fine silt and coarse silt, and occasionally even the clay which is fractionated into
+The clay and sand are also subdivided. Memorizing the sand fractions is particularly useful since these sizes often show up in names of soil map units. Soil map units convey information about patterns of spatial variability across the landscape. Additionally, in more advanced courses students are typically asked to be responsible for the size limits of the fine silt and coarse silt, and occasionally even the clay which is fractionated into:
     
 \begin{itemize}
     \item fine clay $\left( < 0.00008\, mm \right)$ or $\left( < 0.08\, \mu m \right)$
@@ -191,50 +192,70 @@ The amount of fine clay is particularly important when classifying some soils.
 \centering
 \caption{Table of sand fraction names and size limits.}
 \label{tab:sandfractions}
-\begin{tabular}{|l|c|}
+\begin{tabular}{|lc|}
 \hline
-Sand Separate           &  Diameter (mm)\\
-\hline \hline
-very fine sand          & 0.05 - 0.10\\
-fine sand               & 0.10 - 0.25\\
-medium sand             & 0.25 - 0.50\\
-coarse sand             & 0.50 - 1.00\\
-very coarse sand        & 1.00 - 2.00\\
+Sand Separate    & Diameter (mm) \\ \hhline{|==|}
+very fine sand   & 0.05 – 0.10   \\
+fine sand        & 0.10 – 0.25   \\
+medium sand      & 0.25 – 0.50   \\
+coarse sand      & 0.50 – 1.00   \\
+very coarse sand & 1.00 – 2.00   \\
 \hline
 \end{tabular}
 \end{table}
+
+%| Sand Separate    | Diameter (mm) |
+%|------------------|---------------|
+%| very fine sand   | 0.05 – 0.10   |
+%| fine sand        | 0.10 – 0.25   |
+%| medium sand      | 0.25 – 0.50   |
+%| coarse sand      | 0.50 – 1.00   |
+%| very coarse sand | 1.00 – 2.00   |
     
 \begin{table}[!htbp]
 \centering
-\caption{Table of modifier names with the volume of the coarse fraction.}
+\caption{Table of coarse fraction (CF) content volume percentage and modifier names.}
 \label{tab:coarsefractionvolume}
-\begin{tabular}{|l|c|}
+\begin{tabular}{|ll|}
 \hline
-Volume of Coarse Fraction           &  Modifier Name\\
-\hline \hline
-0-15\%      & no modifier\\
-15-35\%     & gravelly, cobbly, stony, or bouldery\\
-35-60\%     & add \textbf{very} to the modifier e.g. very gravelly\\
-\textgreater\,60\%      & add \textbf{extremely} to the modifier e.g. very gravelly\\
+\% Volume of CF  &  Modifier Name                        \\  \hhline{|==|}
+0-15             & no modifier                           \\
+15-35            & gravelly, cobbly, stony, or bouldery  \\
+35-60            & add very e.g. very gravelly           \\
+\textgreater{}60 & add extremely e.g. extremely gravelly \\
 \hline
 \end{tabular}
 \end{table}
+
+%| % Volume of CF | Modifier Name                          |
+%|----------------|----------------------------------------|
+%| 0-15           | no modifier                            |
+%| 15-35          | gravelly, cobbly, stony, or bouldery   |
+%| 35-60          | add very e.g. very gravelly            |
+%| > 60           | add extremely e.g. extremely gravelly  |
     
 \begin{table}[!htbp]
 \centering
 \caption{Table of coarse fraction separates size increments.}
 \label{tab:coarsefractionsizenames}
-\begin{tabular}{|l|c|}
+\begin{tabular}{|l c|}
 \hline
-Volume of Coarse Fraction           &  Modifier Name\\
-\hline \hline
-Gravel      & 2-75\,mm \\
-Cobble      & 75-250\,mm \\
-Stone       & 250-600\,mm \\
-Boulder     & \textgreater\, 600\,mm \\
+Name        &  Size                \\ \hhline{|==|}
+Gravel      & 2-75 mm              \\
+Cobble      & 75-250 mm            \\
+Stone       & 250-600 mm           \\
+Boulder     & \textgreater{}600 mm \\
 \hline
 \end{tabular}
 \end{table}
+
+% Table of coarse fraction separates size increments.
+%|   Name  | Size       |
+%|---------|------------|
+%| Gravel  | 2-75 mm    |
+%| Cobble  | 75-250 mm  |
+%| Stone   | 250-600 mm |
+%| Boulder | > 600 mm   |
     
 \section{Soil Structure}
 \label{structure}
@@ -286,7 +307,7 @@ Soil structure may exist as a compound structure in which large peds may further
     
 Size is conveyed in such a way that the peds narrowest dimension  determines the size class for each type. Size classes for granular, angular blocky, sub-angular blocky, lenticular, wedge, prismatic, and columnar structure types are \emph{very fine}, \emph{fine}, \emph{medium}, \emph{coarse}, and \emph{very coarse}. For the platy structure type \emph{thin} is substituted for \emph{fine} and \emph{thick} is substituted for \emph{coarse} size class names.
 
-The five size classes for granular and platy structures are \qty{< 1}{mm}, \qtyrange{1}{< 2}{mm}, \qtyrange[range-units = single]{2}{< 5}{mm}, \qtyrange{5}{< 10}{mm}, and \qty{\geq 10}{mm}.
+The five size classes for granular and platy structures are \qty{< 1}{mm}, \qtyrange{1}{< 2}{mm}, \qtyrange{2}{< 5}{mm}, \qtyrange{5}{< 10}{mm}, and \qty{\geq 10}{mm}.
 
 The six size classes for columnar, prismatic, wedge are \qty{< 10}{mm}, \qtyrange{10}{< 20}{mm}, \qtyrange{20}{< 50}{mm}, \qtyrange{100}{< 500}{mm}, and \qty{\ge 500}{mm}. Note that these structures have this additional larger size class of extremely coarse.
 
@@ -497,7 +518,7 @@ Recrystallized or modified products from the chemical breakdown and/or alteratio
  
 Alteration of reducing and oxidizing (redox) conditions seen when the soil is in well aerated conditions may be seen in the soil as zones of concentrations offset by zones of depletions. The inference of such might be that oxidized and depleted iron patterns, or redoximorphic condition, are a result of a cycling between being saturated with water, poor drainage, followed by more aerobic conditions, good drainage, these are some of the evidences of hydric soil conditions in that zone of the soil, and soil color are strong inferences toward such a hydric conditions.
     
-Soil color determination is accomplished by matching soil to color chips in The Munsell Book of Color. Color is communicated in a letter and number combination. These describe three parts of color: hue, value, and chroma such as 10YR 5/4. \textit{Hue} is the dominant spectral wavelength such as the colors of the rainbow (ROYGBIV). Soil is frequently in the red-orange-yellow range.  A 10R represents \qty{100}{\percent} whereas a 5Y represents \qty{75}{\percent} yellow and \qty{25}{\percent} red. \textit{Value} is the lightness of color. A value of 0 would be lowest lightness and 10 would be the lightest. \textit{Chroma} is the relative purity, intensity or strength of the hue. A chroma of 0 is pure black, grey, or white (hue dependent).
+Soil color determination is accomplished by matching soil to color chips in The Munsell Book of Color. Color is communicated in a letter and number combination. These describe three parts of color: hue, value, and chroma such as 10YR 5/4. \textbf{\textit{Hue}} is the dominant spectral wavelength such as the colors of the rainbow (ROYGBIV). Soil is frequently in the red-orange-yellow range.  A 10R represents \qty{100}{\percent} whereas a 5Y represents \qty{75}{\percent} yellow and \qty{25}{\percent} red. \textbf{\textit{Value}} is the lightness of color. A value of 0 would be lowest lightness and 10 would be the lightest. \textbf{\textit{Chroma}} is the relative purity, intensity or strength of the hue. A chroma of 0 is pure black, grey, or white (hue dependent).
 
 Previously the example given was 10YR 5/4 where 10YR is the hue, 5 is the value, and 4 is the chroma.
     
