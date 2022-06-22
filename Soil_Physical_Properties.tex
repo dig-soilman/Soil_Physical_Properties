@@ -1,6 +1,8 @@
-\documentclass{article}
+\documentclass[letterpaper, 12pt]{article}
 \usepackage[utf8]{inputenc}
-\usepackage[a5paper, inner=1.5cm, outer=1.5cm, top=1.75cm, bottom=1.5cm]{geometry} % this will be half an A4 and is thought that it might be better presented on smartphones
+\usepackage[inner=6cm, outer=4cm, top=3cm, bottom=3cm]{geometry} 
+\usepackage[english]{babel}
+\usepackage[autostyle]{csquotes}
 \usepackage{amsmath} % provides miscellaneous enhancements for improving the information structure and printed output of documents containing mathematical formulas 
 \usepackage{amsfonts,amssymb} % amssymb provides an extended symbol collection and internally loads amsfonts Computer Modern font plus a set of miscellaneous TeX fonts that augment the standard Computer Modern set
 \usepackage{hyperref}
@@ -18,7 +20,6 @@
 \usepackage{array}
 \graphicspath{ {images/} } % Path relative to the .tex file containing the \includegraphics command
 \usepackage{siunitx} % comprehensive (si) units package and overleaf chokes on [=v3]
-% \usepackage[version=4]{mhchem} % provides commands for typesetting chemical molecular formulae and equations. Using siunitx instead of mhchem
 % begin itemize and enumerate formatting
 \usepackage{enumitem} % Control layout of itemize, enumerate, description
 \setlist{nolistsep} % removes space between list and enumerate items
@@ -37,8 +38,6 @@
 \begin{document}
 \maketitle
 
-\frontmatter
-
 \section*{Copyright}
 
 The Soil Physical Properties by Donald G. McGahan is licensed under a \href{https://creativecommons.org/licenses/by-nc-sa/4.0/}{Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)} 
@@ -47,12 +46,8 @@ The Soil Physical Properties by Donald G. McGahan is licensed under a \href{http
 \listoffigures
 \listoftables
 
-\mainmatter
-
 \section{Introduction}
 \label{introduction}
-
-% TODO populate introductory section text.
 
 Descriptions of the physical properties of soil include size separates, organization of size separates, density, voids or porosity, color, reaction, effervescence and consistence.  These are properties that can be seen, felt, and tasted.
 
@@ -153,7 +148,7 @@ The largest size fraction is named, unless a smaller fraction is more than twice
     
 \subsection{Determination of soil texture}
 
-The field method of determining textural class is the "feel method” where sand feels gritty, silt feels smooth or floury, and clay feels sticky. And the subsequently determined proportions are classed and as “apparent texture”.
+The field method of determining textural class is the \enquote{feel method} where sand feels gritty, silt feels smooth or floury, and clay feels sticky. And the subsequently determined proportions are classed and as \enquote{apparent texture}.
 
 \begin{figure*}
     \includegraphics[width=0.9\columnwidth]{images/TextureFlowChart.png}
@@ -188,7 +183,7 @@ Frequently the density of the size separates are assumed and the particles are a
 
 Bouyoucos devised a hydrometer method in an effort to simplify the measurement of sand, silt, and clay for a given soil. The initial methodology required two readings. The initial reading at 40 seconds to differentiate between the mass of soil without sand proves to be quite inaccurate. The modified Bouyoucos forgoes the 40 second reading and calls for sieving the sand out of the suspension. This negates much of the time savings of the original method. Additionally, with textural classes sand, sandy loam, and loamy sand the sand might need to be fractionated anyway for proper subclass modification of the sand. Thus, sieving to retain the sand can have practical benefits.
 
-The sand is further fractionated via dry sieving. The amount of each of the sand sub-fractions becomes important for soils with textural class of sand, loamy sand, or sandy loam soils wherein the sand might earn a \textit{coarse}, \textit{fine} or \tesxtit{very fine} modifier. See Soil Survey Manual 2017 for more on sand textures subclasses.
+The sand is further fractionated via dry sieving. The amount of each of the sand sub-fractions becomes important for soils with textural class of sand, loamy sand, or sandy loam soils wherein the sand might earn a \textit{coarse}, \textit{fine} or \textit{very fine} modifier. See Soil Survey Manual 2017 for more on sand textures subclasses.
 
 Note that the silt fraction is further separated into fine and coarse. The silt size has particular importance to the mechanical properties of the silt size and is useful for classing for erosion.
 
@@ -282,7 +277,7 @@ Boulder     & \textgreater{}600 mm \\
     
 \textbf{Structure} is the term used to convey the arrangement of size separates pedologically arranged into larger stable units called \textbf{aggregates}, or \textbf{peds}, in the soil expressed as regularly repeating pattern of permanent cleavage planes in the soil mass. The soil aggregates cleave planes form due to repeated compression and contraction of soil particles which may be related to shrink/swell of clay, freeze-thaw cycles, root penetration through soil animals (earth worm activity), etc. The relative mechanical and water stability of peds are variable and related to the aggregate promoting substances organics, iron oxides, carbonates, clays, and/or silica. Organics can be from decomposed vegetative material and/or root polysaccharids exuded from roots.
     
-Soils can be structureless expressing a single grain or cohesive nature. Cohesive structureless soils and structured soil can produce “artificial”–not pedogeneticaly derived–\textbf{clods} when broken up by mechanical means. Clods are different that using the term \textbf{fragment} which is used to describe a piece of a broken ped.
+Soils can be structureless expressing a single grain or cohesive nature. Cohesive structureless soils and structured soil can produce \enquote{artificial}–not pedogeneticaly derived–\textbf{clods} when broken up by mechanical means. Clods are different that using the term \textbf{fragment} which is used to describe a piece of a broken ped.
     
 \textbf{Nodules} and \textbf{concretions} are two other arrangements encountered that have formed in soils and while both are cemented spherical bodies without obvious crystals the concretions display layering whereas nodules do not.
     
@@ -294,7 +289,7 @@ Soil structure is observed, measured, and recorded in-situ as \textbf{Type}, \te
     
 Classing soil structure is first expressed by the form now called type and formally referred to as shape. Eight types exist: granular, angular blocky, sub angular blocky, lenticular, platy, wedge, prismatic, and columnar.
 
-The prismatic and columnar type structure are taller than wide with the prismatic having flat tops and columnar having rounded tops that are commonly described as having "bleached" tops. The bleached tops result from dispersion and removal of pigmenting agents such as iron and manganese oxides and organic matters that so often adorn the outside of peds.
+The prismatic and columnar type structure are taller than wide with the prismatic having flat tops and columnar having rounded tops that are commonly described as having \enquote{bleached} tops. The bleached tops result from dispersion and removal of pigmenting agents such as iron and manganese oxides and organic matters that so often adorn the outside of peds.
 
 Granular and blocky structural types are roughly equidistant side to sided and top to bottom. Granular are polyhedral with irregular faces that are difficult to imagine a clear nesting faces with their neighbors. Blocky structures planar faces are discernible as nesting with neighboring blocks. Angular describes blocky structure type with sharp angular faces versus the subangular blocky polyhedrals wherein the planar faces lack sharp angles and are subrounded.
 
@@ -321,7 +316,7 @@ Three grades of structure are described.
     \item \textbf{\textit{Strong}}: Most of the soil mass is visible as beds, moist of which can be handled with ease without breaking.
 \end{itemize}
 
-Soil structure may exist as a compound structure in which large peds may further fall apart into smaller blocks or smaller peds. Both are described starting with the larger type the term "parting to" and then the smaller type added to the description.
+Soil structure may exist as a compound structure in which large peds may further fall apart into smaller blocks or smaller peds. Both are described starting with the larger type the term \enquote{parting to} and then the smaller type added to the description.
     
 \subsection{Size of Structure}
     
@@ -362,7 +357,7 @@ Increasing sodium tends to speed structure degradation. The sodium interacts wit
 \section{Density}
 \label{density}
     
-Solids Density $\left(\rho_s\right)$ is the density of the solid soil particles only in units of mass per volume e.g., (\unit{\gram\per\cubic\centi\metre}). Often in texts the greek letter rho  is a shorthand symbol for density and s is for solids.
+Solids Density $\left(\rho_s\right)$ is the density of the solid soil particles only in units of mass per volume e.g., (\unit{\gram\per\cubic\centi\metre}). Often in texts the Greek letter rho  is a shorthand symbol for density and s is for solids.
 
 \begin{equation}
     Particle\,Density = \left(\frac{Weight\,of\,Solids}{Volume\,of\,Solids}\right)   
@@ -574,7 +569,7 @@ Principle to the outcome of soil consistence classes reported for soil is the so
 
 \textbf{Rupture Resistance} classes span from \textit{loose} for cohesion-less soils include courser textures sand and loamy sand that are loose and progress though successively greater force being applied. These field tests begin with determination of failure when a quantitative force is applied between thumb and forefinger and progresses to force applied between hands to force exerted underfoot to the force being a blow as being \textit{very rigid}.
 
-\textbf{Plasticity Class} is determined on "puddled" soil at the water content that yields the maximum plasticity. Thus plasticity is the degree of permanent deformation the soil can exhibit without rupturing. Soil is formed into rolls \qty{4}{cm} long and \qty{6}{cm}, \qty{4}{cm}, or \qty{2}{cm} in diameter. The classes are \textit{nonplastic}, \textit{slightly plastic}, \textit{moderately plastic}, or \textit{very plastic}.
+\textbf{Plasticity Class} is determined on \enquote{puddled} soil at the water content that yields the maximum plasticity. Thus plasticity is the degree of permanent deformation the soil can exhibit without rupturing. Soil is formed into rolls \qty{4}{cm} long and \qty{6}{cm}, \qty{4}{cm}, or \qty{2}{cm} in diameter. The classes are \textit{nonplastic}, \textit{slightly plastic}, \textit{moderately plastic}, or \textit{very plastic}.
 
 \textbf{Toughness Class}, \textit{low},  \textit{medium}, or \textit{high} based on the force necessary to form a \qty{3}{milli\metre} roll with the fingers.
 
@@ -668,10 +663,10 @@ Violently effervescent      & Bubbles quickly form a thick foam \\
 
 % dig-soilman: ToDo Example study questions construction is a potential add-on. The down side is that as of 2022 the propensity for the solutions to such questions on study boards negates there effectiveness. Consequently dig-soilman favors NOT adding study questions directly to the end of the document and instead expects instructors leveraging the document to create there own.
 
-% \appendix
-% \chapter{First and only appendix}
+\newpage
+\quad % without \quad no new page would be inserted!!!
+\newpage
 
-\backmatter
 \section*{Bibliography}
 
 Soil Survey Staff. 1999. Soil taxonomy: A basic system of soil classification for making and interpreting soil surveys. 2nd edition. Natural Resources Conservation Service. U.S. Department of Agriculture Handbook 436.
