@@ -166,8 +166,11 @@ Such pipette sampling is considered to be the “platinum standard” for textur
 
 Sampling time for the plane above where the silt fraction has passed below is determined via a modified form of Stokes’ Law for sedimenting soil suspensions:
 
+\noindent\begin{minipage}{\textwidth}
 \begin{equation}
-    t=\frac{18\eta h} {[g\,(\rho_s - \rho_l)X^2]}            \\
+    t=\frac{18\eta h}{[g\,(\rho_s - \rho_l)X^2]}
+\end{equation}
+\begin{equation*}
     \begin{aligned}
         \text{where}                                          \\
         t &= \text{time}                                      \\
@@ -175,9 +178,10 @@ Sampling time for the plane above where the silt fraction has passed below is de
         h &= \text{-height above plane z; the sampling depth} \\
         g &= \text{acceleration due to gravity}               \\
         \rho_s &= \text{particle density solid}               \\
-        \rho_l &= \text{liquid density}                       \\
+        \rho_l &= \text{liquid density}
     \end{aligned}
-\end{equation}
+\end{equation*}
+\end{minipage}
         
 Frequently the density of the size separates are assumed and the particles are assumed to be spherical.
 
@@ -367,7 +371,7 @@ Expressed in a maths form $\rho_p =\frac{W_s}{V_s}$ where $\rho$ is density, $p$
 
 Range of particle density values for typical soil materials varies with inorganic materials ranging from \numrange{2.6}{2.75} \unit{\gram\per\cubic\centi\metre}.
 
-For inorganic materials $\rho_s$ is  (Al = \qty[per-mode=symbol]{27}{\gram\per\mole}; Si =  \qty[per-mode=symbol]{28}{\gram\per\mole}; and Fe = \qty[per-mode = symbol]{56}{\gram\per\mole}). For organic materials $\rho_s$ is  (C = \qty[per-mode = symbol]{12}{\gram\per\mole}; O = \qty[per-mode=symbol]{16}{\gram\per\mole}; and H = \qty[per-mode=symbol]{1}{\gram\per\mole}).
+For inorganic materials $\rho_s$ is  (Al = \qty[per-mode=symbol]{27}{\gram\per\mole}; Si =  \qty[per-mode=symbol]{28}{\gram\per\mole}; and Fe = \qty[per-mode=symbol]{56}{\gram\per\mole}). For organic materials $\rho_s$ is  (C = \qty[per-mode=symbol]{12}{\gram\per\mole}; O = \qty[per-mode=symbol]{16}{\gram\per\mole}; and H = \qty[per-mode=symbol]{1}{\gram\per\mole}).
 
 The $\rho_s$ is affected by the kind of minerals or rock (e.g., iron is heavier than aluminum) and the proportion of organic matter to mineral (inorganic) material.
 
@@ -381,15 +385,19 @@ Bulk Density $\left(\rho_b\right)$ is a measure of the weight of the soil per un
 
 For maths treatment:
 
+\noindent\begin{minipage}{\textwidth}
 \begin{equation}
-    \rho_b = \frac{M_s}{V_t}\quad.    \\
+    \rho_b = \frac{M_s}{V_t}\quad
+\end{equation}
+\begin{equation*}
     \begin{aligned}
     \text{where:}.                    \\
         \rho_b &= \text{density bulk} \\
         M_s &= \text{mass of solids}  \\
-        V_t &= \text{volume total}    \\
+        V_t &= \text{volume total}
     \end{aligned}
-\end{equation}
+\end{equation*}
+\end{minipage}
 
 The $\rho_b$ values for most mineral (inorganic) soils are \qtyrange[range-units=single]{1.20}{1.40}{\gram\per\cubic\cm} and for organic soils \qtyrange[range-units=single]{0.10}{0.25}{\gram\per\cubic\centi\meter}. Recall that the specific gravity (density) of water, at STP, is \qty[per-mode=fraction]{1.00}{\gram\per\cubic\centi\meter}.
 
@@ -436,8 +444,12 @@ Porosity $\left(\eta\right)$ is the fraction of soil volume occupied by air and 
 
 A maths treatment of porosity is:
 
+\noindent\begin{minipage}{\textwidth}
 \begin{equation}
     \eta = \frac{\left(V_a + V_w\right)}{\left(V_a + V_w + V_s\right)}
+\end{equation}
+
+\begin{equation*}
     \begin{aligned}
         \text{where:}                              \\
         \eta &= \text{porosity (greek letter eta)} \\
@@ -445,19 +457,24 @@ A maths treatment of porosity is:
         V_w &= \text{volume of water}              \\
         V_s &= \text{volume of solids}
     \end{aligned}
-\end{equation}
+\end{equation*}
+\end{minipage}
 
 This can be simplified to:
 
+\noindent\begin{minipage}{\textwidth}
 \begin{equation}
     \eta = \frac{V_v}{V_t}
+\end{equation}
+\begin{equation*}
     \begin{aligned}
         \text{where:}                               \\
         \eta &= \text{porosity}                     \\
         V_v &= \text{volume of the voids}:\,V_a+V_w \\
         V_t &= \text{volume total}:\,V_a+V_w+Vs
     \end{aligned}
-\end{equation}
+\end{equation*}
+\end{minipage}
 
 It can be challenging to determine the $V_v$ when the relative proportions of $V_a$ and $V_w$ are unknown. When $V_a = 0$ the soil is saturated. Saturating a known total volume $\left(V_t\right)$  such as a core extracted from a soil and massing the saturated soil is useful because the density of water, its specific gravity, is know to be \qty[per-mode = symbol]{1}{\gram\per\cubic\centi\metre}. Since $V_a=0$ then $V_w=V_v$. The same sample can then have the water driven off by heating in a \qty{110}{\degreeCelsius} oven until it no longer reduces in mass and the difference in mass equates to a volume of voids $\left(V_v\right)$ that the water occupied. This is useful because the particle density does not have to be measured.
 
@@ -465,8 +482,11 @@ Another estimate of porosity can be derived if the average solids density $\left
 
 The quotient of bulk density $\left(\rho_b\right)$ to solids density $\left(\rho_s\right)$ for soil should always be a value less than one and represents the fraction of the whole soil that is occupied by the solids. When subtracted from the whole the quotient of bulk density to solids density will yield the fraction of the whole soil that is voids.
 
+\noindent\begin{minipage}{\textwidth}
 \begin{equation}
     \eta =\left(1-\frac{\rho_{\text{b}}}{\rho_{\text{s}}}\right)
+\end{equation}
+\begin{equation*}
     \begin{aligned}
         \text{where:}                                            \\
         \eta &= \text{porosity or void fraction of the whole }.  \\
@@ -474,12 +494,16 @@ The quotient of bulk density $\left(\rho_b\right)$ to solids density $\left(\rho
         \rho_s &= \text{density of solids}                       \\
         1 &= \text{the whole}
     \end{aligned}
-\end{equation}
+\end{equation*}
+\end{minipage}
 
 Porosity as a percent:
 
+\noindent\begin{minipage}{\textwidth}
 \begin{equation}
     \%\,\eta =\left(1-\frac{\rho_{\text{b}}}{\rho_{\text{s}}}\right) \times 100
+\end{equation}
+\begin{equation*}
     \begin{aligned}
         \text{where:}                                          \\
         \eta &= \text{porosity or void fraction of the whole } \\
@@ -487,7 +511,8 @@ Porosity as a percent:
         \rho_s &= \text{density of solids}                     \\
         1 &= \text{the whole}
     \end{aligned}
-\end{equation}
+\end{equation*}
+\end{minipage}
 
 Example:
 
@@ -498,8 +523,11 @@ Porosity varies with texture, structure, and bulk density. Soils with more clay 
 
 Porosity and bulk density are inversely related and can be related with maths as:
 
+\noindent\begin{minipage}{\textwidth}
 \begin{equation}
     \eta \, \frac{1}{\propto} \, \rho_b
+\end{equation}
+\begin{equation*}
     \begin{aligned}
         \text{where:}                                          \\
         \eta &= \text{porosity or void fraction of the whole } \\
@@ -507,7 +535,9 @@ Porosity and bulk density are inversely related and can be related with maths as
         \propto &= \text{proportional to}                      \\
         \frac{1}{\propto} &= \text{inversely proportional to}
     \end{aligned}
-\end{equation}
+
+\end{equation*}
+\end{minipage}
 
 Decreasing bulk density promotes porosity. The pores are the voids between the solids that can contain air and or water. Biologicals in the soil rely on water stored there and aerobic organisms rely of the air composition.
 
@@ -661,7 +691,9 @@ Violently effervescent      & Bubbles quickly form a thick foam \\
 
 % dig-soilman: ToDo Example study questions construction is a potential add-on. The down side is that as of 2022 the propensity for the solutions to such questions on study boards negates there effectiveness. Consequently dig-soilman favors NOT adding study questions directly to the end of the document and instead expects instructors leveraging the document to create there own.
 
-
+\newpage
+\quad % without \quad no new page would be inserted!!!
+\newpage
 
 \section*{Bibliography}
 
