@@ -1,7 +1,9 @@
 % Donald G. McGahan 2022 v. 01
-\documentclass{memoir}
+%\documentclass{memoir}
+\documentclass{article}
 \usepackage[utf8]{inputenc}
-\usepackage{multirow} % for multi-row in tables
+\usepackage{array}
+%\usepackage{multirow} % for multi-row in tables
 \begin{document}
 \subsection{Size of Structure}
 \label{sizeofstructure}
@@ -14,18 +16,89 @@ Size is conveyed in such a way that the peds narrowest dimension  determines the
 \label{tab:astructuresizeclass}
 \centering
 \caption{Structure size classes.}
+\begin{tabular}{ m{6em} m{5.5em} m{5.5em} m{5.5em} } \\[0.75em]
+Size Class & \multicolumn{3}{c}{Criteria: Structural unit size (mm)} \\[0.75em] 
+\cline{2-4} \\
+& Granular \mbox{(Diameter)}, Platy \mbox{(Thickness)} & Columnar, Prismatic, Wedge, \mbox{(Diameter)} & Angular \& Subangular Blocky and Lenticular, \mbox{(Diameter)} \\[0.75em]
+ \hline\\
+{Very Fine, \mbox{(Very Thin)}} & \hfil \textless 1 &  \hfil\textless 10 &  \hfil\textless 5 \\[0.75em]
+Fine, \mbox{(Thin)} & \hfil 1 to \textless 2 & \hfil 10 to \textless 20 & \hfil 5 to \textless 10 \\[0.75em]
+{Medium, \mbox{(Medium)}} & \hfil 2 to \textless 5 & \hfil 20 to \textless 50 & \hfil 10 to \textless 20 \\[0.75em]
+{Coarse, \mbox{(Thick)}} & \hfil 5 to \textless 10 & \hfil 50 to \textless 100 & \hfil \textless 20 to \textless 50 \\[0.75em]
+{Very Coarse, \mbox{(Very Thick)}} & \hfil $\geq$ 10 & \hfil 100 to \textless 500 & \hfil $\geq$ 50 \\[0.75em]
+{Extremely Coarse} & \hfil \textendash & \hfil $\geq$ 500 & \hfil \textendash \\[0.75em]
+\hline
+\end{tabular}
+\end{table}
+
+% dig-soilman: below is an html rendering of the above table.
+%<table id="tab:astructuresizeclass">
+%	<caption>Table Structure size classes.</caption>
+%<tbody>
+%	<tr class="odd">
+%		<th rowspan="2" style="text-align: left;">Size Class</th>
+%		<th colspan="3" style="text-align: center;">Criteria: Structural unit size (mm)</th>
+%	</tr>
+%	<tr class="even">
+%		<th style="text-align: center;">Granular, (Diameter) Platy (Thickness)</th>
+%		<th style="text-align: center;">Columnar, Prismatic, Wedge, (Diameter)</th>
+%		<th style="text-align: center;">Angular &amp; Subangular Blocky and Lenticular, (Diameter)</th>
+%	</tr>
+%	<tr class="odd">
+%		<td style="text-align: left;">Very Fine (Very Thin)</td>
+%		<td style="text-align: center;">&lt; 1</td>
+%		<td style="text-align: center;">&lt; 10</td>
+%		<td style="text-align: center;">&lt; 5</td>
+%	</tr>
+%		<td style="text-align: center;">1 to &lt; 2</td>
+%		<td style="text-align: center;">10 to  &lt;  20</td>
+%		<td style="text-align: center;">5 to &lt; 10</td>
+%	</tr>
+%	<tr class="odd">
+%		<td style="text-align: left;">Medium (Medium)</td>
+%		<td style="text-align: center;">2 to &lt; 5</td>
+%		<td style="text-align: center;">20 to &lt; 50</td>
+%		<td style="text-align: center;">10 to &lt; 20</td>
+%	</tr>
+%		<tr class="even">
+%		<td style="text-align: left;">Coarse (Thick)</td>
+%		<td style="text-align: center;">5 to &lt;  10</td>
+%		<td style="text-align: center;">50 to &lt; 100</td>
+%		<td style="text-align: center;">20 to &lt; 50</td>
+%	</tr>
+%	<tr class="odd">
+%		<td style="text-align: left;">Very Coarse (Very Thick)</td>
+%		<td style="text-align: center;">&ge; 10</td>
+%		<td style="text-align: center;">100 to &lt; 500</td>
+%		<td style="text-align: center;">&ge; 50</td>
+%	</tr>
+%		<tr class="even">
+%		<td style="text-align: left;">Extreamly Coarse</td>
+%		<td style="text-align: center;">&ndash;</td>
+%		<td style="text-align: center;">&ge; 500</td>
+%		<td style="text-align: center;">&ndash;</td>
+%	</tr>
+%</tbody>
+%</table>
+
+
+% dig-soilman: the following table looks fine when a PDF is created from pdflatex but does not translate well using pandoc to output to html
+\begin{table}[!htbp]
+\label{tab:astructuresizeclass}
+\centering
+\caption{Structure size classes.}
 \begin{tabular}{l c c c }
 \hline \\[0.15em]
 Size Class & \multicolumn{3}{c}{Criteria: Structural unit size (mm)}\\[0.75em] 
 \cline{2-4} \\
 & \parbox[c]{2cm}{Granular, \mbox{(Diameter)} Platy \mbox{(Thickness)}} & \parbox[c]{2cm}{Columnar, Prismatic, Wedge, \mbox{(Diameter)}} & \parbox[c]{2cm}{Angular \& Subangular Blocky and Lenticular, \mbox{(Diameter)}} \\[0.75em]
  \hline\\[0.75em]
-{Very Fine, \mbox{(Very Thin)}} & \textless\,1 & \textless\,10 & \textless\,5 \\[0.75em]
-\parbox[c]{2cm}{Fine, \mbox{(Thin)}} & 1\,to\,\textless\,2 & 10\,to\,\textless\,20 & 5\,to\,\textless\,10 \\[0.75em]
-{Medium, \mbox{(Medium)}} & 2\,to\,\textless\,5 & 20\,to\,\textless\,50 & 10\,to\,\textless\,20 \\[0.75em]
-{Coarse, \mbox{(Thick)}} & 5\,to\,\textless\,10 & 50\,to\,\textless\,100 & \textless\,20\,to\,\textless\,50 \\[0.75em]
-{Very Coarse, \mbox{(Very Thick)}} & $\geq$\,10 & 100\,to\,\textless\,500 & $\geq$\,50 \\[0.75em]
-{Extremely Coarse} & \textendash & $\geq$\,500 & \textendash \\[0.75em]
+{Very Fine, \mbox{(Very Thin)}} & \textless 1 & \textless 10 & \textless 5 \\[0.75em]
+\parbox[c]{2cm}{Fine, \mbox{(Thin)}} & 1 to \textless 2 & 10 to \textless 20 & 5 to \textless 10 \\[0.75em]
+{Medium, \mbox{(Medium)}} & 2 to \textless 5 & 20 to \textless 50 & 10 to \textless 20 \\[0.75em]
+{Coarse, \mbox{(Thick)}} & 5 to \textless 10 & 50 to \textless 100 & \textless 20 to \textless 50 \\[0.75em]
+{Very Coarse, \mbox{(Very Thick)}} & $\geq$ 10 & 100 to \textless 500 & $\geq$ 50 \\[0.75em]
+{Extremely Coarse} & \textendash & $\geq$ 500 & \textendash \\[0.75em]
 \hline
 \end{tabular}
 \end{table}
