@@ -3,6 +3,7 @@
 \usepackage[inner=4.67cm, outer=3.33cm, top=2.54cm, bottom=3cm]{geometry} 
 \usepackage[english]{babel}
 \usepackage[autostyle]{csquotes}
+\usepackage{svg}
 \usepackage{amsmath} % provides miscellaneous enhancements for improving the information structure and printed output of documents containing mathematical formulas 
 \usepackage{amsfonts,amssymb} % amssymb provides an extended symbol collection and internally loads amsfonts Computer Modern font plus a set of miscellaneous TeX fonts that augment the standard Computer Modern set
 \usepackage{hyperref}
@@ -111,11 +112,9 @@ Clay are separates with diameters of \qty{ \leq 0.002}{mm} or \qty{2}{\micro\met
 
 \subsection{Textural Triangle}
     
-A Gibbs triangle, commonly referred to as a textural triangle, is a ternary diagram that relates the relationship between the sand, silt, and clay mass proportions and helps place the relationship of these size separates into a \textbf{Textural Class}. The twelve soil textural class system is presented in Figure \ref{fig:TexturalTriangle}.
+A Gibbs triangle, commonly referred to as a textural triangle, is a ternary diagram that relates the relationship between the sand, silt, and clay mass proportions and helps place the relationship of these size separates into a \textbf{Textural Class}. There are twelve basic soil textural classes in the system is presented in Figure \ref{fig:TexturalTriangle}.
     
 Sand, Loamy Sand, Sandy Loam, Sandy Clay Loam, Silt, Silt Loam, Silty Clay Loam, Loam, Clay Loam, Clay, Silty Clay, and Sandy Clay.
-
-% ToDo dig-soilman: add a passage to introduce not only the 12 category system, but also the 5, and 3 category system.
     
 It is important to note that the sand, silt, and clay mass proportions represented as a percent of the fine earth fraction add up to 100 percent. Organic matter and coarse fraction is not included when determining the textural class.
     
@@ -123,11 +122,13 @@ It is important to note that the sand, silt, and clay mass proportions represent
 Sand\% + Silt\% + Clay\% = 100\%
 \end{center}
     
-% ToDo dig-soilman: Find a TiKz coded rendering of the Gibbs triangle/ Textural Triangle with 12 classes
+% ToDo dig-soilman: Find a TiKz or R coded rendering of the Gibbs triangle/ Textural Triangle with 12 classes
 
-% ToDo dig-soilman: Find a TiKz coded rendering of the Gibbs triangle/textural triangle with 5 classes
+% ToDo dig-soilman: Find a TiKz or R coded rendering of the Gibbs triangle/textural triangle with 5 classes
 
-% ToDo dig-soilman: Find a TiKz coded rendering of the Gibbs triangle/textural triangle with 5 classes
+% ToDo dig-soilman: Find a TiKz or R coded rendering of the Gibbs triangle/textural triangle with family particle size class overlay
+
+% dig-soilman: it would be beneficial to have the Gibbs 12 category diagram and an overlay of the Family Particle Size Classes as an overlay to help natural resource majors to see that the Family Particle Size Classes are NOT the typically referred to "textures." In particular Agronomists and Crops folks struggle with differentiation of the two until they achieve advanced degrees. 
     
 \begin{figure*}
     \centering
@@ -149,18 +150,12 @@ The implications of coarse fraction is that the coarse fraction does not partici
 If two or more coarse fraction sizes exist, the entire volume of the coarse fraction is used for the modifier.
     
 The largest size fraction is named, unless a smaller fraction is more than twice the volume of the larger size fraction and then that smaller fraction modifier is used as the modifier.
-
-\begin{figure*}
-    \includegraphics[width=0.9\columnwidth]{images/Textural_Classes_3-systems_bw-25pct-72pxpin-1013x1150px.png}
-    \caption{Diagram relating the twelve, five and three  Textural Classes. The High School organization FFA uses the USDA five class textural classes categorical system for their Carrier Development Events. All three systems are used a in classifying and decimating information about where soils live their properties and services they provide.}
-    \label{fig:TextureClass12-5-3}
-\end{figure*}
     
 \subsection{Determination of soil texture}
 
-The field method of determining textural class is the \enquote{feel method} where sand feels gritty, silt feels smooth or floury, and clay feels sticky. The subsequently determined proportions are classed and as \enquote{apparent texture}.
+The field method of determining textural class is the \enquote{feel method} where sand feels gritty, silt feels smooth or floury, and clay feels sticky. The subsequently determined proportions are classed and an \enquote{apparent texture}.
 
-Professional practitioners aim to determine the apparent textural class of the twelve category textural class system as the five and three category systems can be derived and employed as necessary. Figure \ref{fig:TextureByFeelFlowChart12} provides a decision tree to guide the determination.
+Professional practitioners aim to determine the apparent textural class of the twelve category textural class system. Figure \ref{fig:TextureByFeelFlowChart12} provides a decision tree to guide the determination.
 
 \begin{figure*}
     \includegraphics[width=0.9\columnwidth]{images/Texture_by_feel_analysis_DecissionTree-12-Category-bw-72pxpin-576x733px.png}
@@ -168,7 +163,9 @@ Professional practitioners aim to determine the apparent textural class of the t
     \label{fig:TextureByFeelFlowChart12}
 \end{figure*}
 
-As mentioned previously High School FFA Land Judging teams determine a textural class from the five category system an a modified decision tree is presented in Figure \ref{fig:TextureByFeelFlowChart5class}.
+It is common, frequent, and convenient to speak more broadly, generally, or more inclusively about classes of soil texture. Commonly employed is referring to soil materials as \textit{General texture groupings} of \textbf{sandy}, \textbf{loamy}, or \textbf{clayey}. Leveraging these General texture grouping in discussions the way in which these three terms are used determines if the term is a General texture grouping or a textural category from the twelve basic textural classes. This can initially be confusing to the uninitiated so when it doubt, ask, because a \textit{sandy, loamy, or clayey} soil materials reference is not the same as a \textit{sand, loam, or clay} textural class. Further, the \textit{General texture groups} are frequently referred to as five \textit{General texture subgroups}.
+
+As mentioned previously High School FFA Land Judging teams determine a textural class from the five category system. A modified decision tree is presented in Figure \ref{fig:TextureByFeelFlowChart5class}.
 
 \begin{figure*}
     \includegraphics[width=0.9\columnwidth]{images/Texture_by_feel_analysis_DecissionTree-5-Category-bw-72pxpin-576x737px.png}
@@ -176,7 +173,17 @@ As mentioned previously High School FFA Land Judging teams determine a textural 
     \label{fig:TextureByFeelFlowChart5class}
 \end{figure*}
 
-The five textural class system and a three textural class system are leveraged within the US Soil Taxonomy system and in the way soils are presented in the numerous technical classification systems e.g. suitability and limitations. When the term \csname{Clayey}\endcsname is employed it can be a textural  class term. It is confusing to new learners when the class terms such as clayey is used, but not previously presented or if presented in an introductory soil coarse not fully appreciated. Additionally, high-school FFA Land Judgers learn the five class system wherein \textbf{\textit{Fine}} is the correct textural class for the twelve class categories \textit{Clay}, \textit{Sandy Clay}, and \textit{Silty Clay} and this would be the same \textbf{\textit{Clayey}} from the three category textural class system. Similarly, the \textit{Sand} and \textit{Loamy Sand} classes from the twelve category system become \textbf{\textit{coarse}} or \textbf{\textit{Sandy}} in the five and three category system respectively Figure \ref{fig:TextureByFeelFlowChart5class}.
+When the term \csname{Clayey}\endcsname is employed it is not a textural class term. It is confusing to new learners when the class terms such as clayey is used, but the term is employed widely and thus this presentation this presentation.
+
+ For instance high-school FFA Land Judgers learn and employ the five \textit{General texture subgroups} wherein \textbf{\textit{Fine}} is the correct textural class for the twelve class categories \textit{Clay}, \textit{Sandy Clay}, and \textit{Silty Clay} and this would be the same \textbf{\textit{Clayey}} from the three category textural class system. Similarly, the \textit{Sand} and \textit{Loamy Sand} classes from the twelve basic category system become \textbf{\textit{coarse}} from the General texture subcategory, or \textbf{\textit{Sandy}} from the General texture category. Figure \ref{fig:TextureClass12-5-3} depicts these relationships graphically.
+
+ \begin{figure*}
+    \includegraphics[width=0.9\columnwidth]{images/Textural_Classes_3-systems_bw-25pct-72pxpin-1013x1150px.png}
+    \caption{Diagram relating the twelve basic textural classes, the five General texture groups and the three General texture subgroups. The High School organization FFA uses the USDA five  general texture subgroups for their Carrier Development Events.}
+    \label{fig:TextureClass12-5-3}
+\end{figure*}
+
+% ToDo dig-soilman alter the Textural_Classes_3-systems_bw-25pct-72pxpin-1013x1150px.png names from USDA 3 class textural classes to USDA 3 general texture groups; USDA 5 class textural classes to USDA 5 general texture groups: USDA 12 textural classes to USDA 12 basic textural classes
 
 Laboratory procedures to determine the actual textural class begins by separation of the coarse fraction from the fine earth fraction via a 2-mm sieve. The coarse fraction volume is determined utilizing Archimedes principle of liquid displacement. The coarse fraction is reported as volume whereas the fine earth fractions are reported as mass.
 
@@ -218,7 +225,7 @@ Note that the silt fraction is further separated into fine and coarse. The silt 
 
 In an introductory soils coarse students are responsible for the size limits of the coarse fraction and fine earth fraction. Within the fine earth fraction introductory soils coarse students are responsible for the size limits of clay, silt, and sand.
 
-The clay and sand are also subdivided. Memorizing the sand fractions is particularly useful since these sizes often show up in names of soil map units. Soil map units convey information about patterns of spatial variability across the landscape. Additionally, in more advanced coarses students are typically asked to be responsible for the size limits of the fine silt and coarse silt, and occasionally even the clay which is fractionated into:
+The clay and sand are also subdivided. Memorizing the sand fractions is particularly useful since these sizes often show up in names of soil map units. Soil map units convey information about patterns of spatial variability across the landscape. Additionally, in more advanced courses students are typically asked to be responsible for the size limits of the fine silt and coarse silt, and occasionally even the clay which is fractionated into:
     
 \begin{itemize}
     \item fine clay \qty{< 0.00008}{mm}, or \qty{< 0.08}{\micro\meter}
@@ -246,7 +253,7 @@ very coarse sand & 1.00 – 2.00   \\
 \end{tabular}
 \end{table}
 
-% dig-soilman: Markdown table rendering below of the above table.
+% dig-soilman: Markdown table rendering below of the above LaTeX table.
 % Table of coarse fraction (CF) content volume percentage and modifier names.
 % | Sand Separate    | Diameter (mm) |
 % |:-----------------|:-------------:|
@@ -273,7 +280,7 @@ very coarse sand & 1.00 – 2.00   \\
 \end{tabular}
 \end{table}
 
-% dig-soilman: Markdown table rendering below of the above table.
+% dig-soilman: Markdown table rendering below of the above LaTeX table.
 % Table of coarse fraction (CF) content volume percentage and modifier names.
 % | % Volume of CF | Modifier Name                          |
 % |:---------------|:---------------------------------------|
@@ -298,7 +305,7 @@ Boulder     & \textgreater{}600 mm \\
 \end{tabular}
 \end{table}
 
-% dig-soilman: Markdown table rendering below of the above table.
+% dig-soilman: Markdown table rendering below of the above LaTeX table.
 % Table of coarse fraction separates size increments.
 % |   Name  | Size       |
 % |:--------|:----------:|
@@ -626,10 +633,12 @@ When discussing pores it is frequently useful to group pores by the classes of v
 
 In the preceding discussion voids and pores are defined separately. Pores can also be grouped into three general types in keeping with the types of voids. Interparticle pores are the connected void spaces occurring between the individual soil particles. Interaggregate pores are the connected void space occurring between soil aggregates. Biopores are pores created by biological activity (e.g., roots and earthworms).
 
-Generally, in an overarching way we can infer much regarding void diameter and textural class. The matrix pores of sandy soils are dominated more by macrovoids. Clay soils are more dominated by microvoids. Thus, in most instances water and air flow more rapidly through sandy soils and more slowly through soils higher in clay. This is despite soils with more clay having a higher overall proportion of voids: greater porosity.
+Generally, in an overarching way, we can infer much regarding void diameter and textural class. The matrix pores of sandy soils are dominated more by macrovoids. Clay soils are more dominated by microvoids. Thus, in most instances water and air flow more rapidly through sandy soils and more slowly through soils higher in clay. This is despite soils with more clay having a higher overall proportion of voids: greater porosity.
 
 \section{Soil Color}
 \label{color}
+
+% dig-soilman: figures are appropriate such as the page of a munsell colorbook and perhaps the relationship between hue, value, and chroma.
     
 Most primary soil minerals are not highly colored (often light gray). A primary soil mineral are those that have not been altered chemically since they solidified from the molten magma. Soil color has great interpretive significance as it is indirectly related to many other soil properties, conditions, and processes.
 
@@ -642,7 +651,15 @@ Recrystallized or modified products from the chemical breakdown and/or alteratio
  
 Alteration of reducing and oxidizing (redox) conditions seen when the soil is in well aerated conditions may be seen in the soil as zones of concentrations offset by zones of depletion. The inference of such might be that oxidized and depleted iron patterns, or redoximorphic condition, are a result of a cycling between being saturated with water, poor drainage, followed by more aerobic conditions, good drainage, these are some of the evidences of hydric soil conditions in that zone of the soil, and soil color are strong inferences toward such a hydric conditions.
     
-Soil color determination is accomplished by matching soil to color chips in The Munsell Book of Color. Color is communicated in a letter and number combination. These describe three parts of color: hue, value, and chroma such as 10YR 5/4. \textbf{\textit{Hue}} is the dominant spectral wavelength such as the colors of the rainbow (ROYGBIV). Soil is frequently in the red-orange-yellow range. A 10R represents \qty{100}{\percent} whereas a 5Y represents \qty{75}{\percent} yellow and \qty{25}{\percent} red. \textbf{\textit{Value}} is the lightness of color. A value of 0 would be lowest lightness and 10 would be the lightest. \textbf{\textit{Chroma}} is the relative purity, intensity or strength of the hue. A chroma of 0 is pure black, grey, or white (hue dependent).
+Soil color determination is accomplished by matching soil to color chips in The Munsell Book of Color. Color is communicated in a letter and number combination. These describe three parts of color: hue, value, and chroma such as 10YR 5/4. \textbf{\textit{Hue}} is the dominant spectral wavelength such as the colors of the rainbow (ROYGBIV). Soil is frequently in the red-orange-yellow range. A 10R represents \qty{100}{\percent} whereas a 5Y represents \qty{75}{\percent} yellow and \qty{25}{\percent} red. \textbf{\textit{Value}} is the lightness of color. A value of 0 would be lowest lightness and 10 would be the lightest. \textbf{\textit{Chroma}} is the relative purity, intensity or strength of the hue. A chroma of 0 is pure black, grey, or white (hue dependent) Figure \ref{fig:MunsellColorSystem}.
+
+\begin{figure}
+    \centering
+   % \includegraphics[width=1.0\columnwidth]{images/2048px-Munsell-system.svg.png}
+    \includesvg[width=1.0\columnwidth]{Munsell-system.svg}
+    \caption{A diagram of the Munsell Color System. The image shows i) the neutral values in steps of 1 from 0 to 10 in a virtical orientation, ii) a circle of 10 hues at value 5 and chroma 6, and iii) the chromas of purple-blue in steps of 2 from 0 to 12, at value 5. From Rus 2007 Creative Commons Attribution-Share Alike 3.0 Unported.}
+    \label{fig:MunsellColorSystem}
+\end{figure}
 
 Previously the example given was 10YR 5/4 where 10YR is the hue, 5 is the value, and 4 is the chroma.
     
@@ -779,6 +796,8 @@ Violently effervescent      & Bubbles quickly form a thick foam \\
 \newpage
 
 \section*{Bibliography}
+
+Rus, J. 2007. The Munsell color system. Creative Commons Attribution ShareAlike3.0 license. [https://commons.wikimedia.org/wiki/File:Munsell-system.svg](https://commons.wikimedia.org/wiki/File:Munsell-system.svg)
 
 Soil Survey Staff. 1999. Soil taxonomy: A basic system of soil classification for making and interpreting soil surveys. 2nd edition. Natural Resources Conservation Service. U.S. Department of Agriculture Handbook 436.
 
