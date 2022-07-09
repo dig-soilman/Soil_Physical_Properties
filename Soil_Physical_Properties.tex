@@ -25,6 +25,10 @@
 \usepackage{enumitem} % Control layout of itemize, enumerate, description
 \setlist{nolistsep} % removes space between list and enumerate items
 % end itemize and enumerate formatting
+
+\usepackage{tikz,lmodern}
+\usepackage[most]{tcolorbox}
+
 % begin paragraph formatting
 \usepackage{parskip}
 \setlength{\parindent}{0pt} % Default is 15pt thus no first line indent
@@ -154,6 +158,17 @@ Sand\% + Silt\% + Clay\% = 100\%
     \caption{Gibbs Triangle or commonly called a Textural Triangle depicting the twelve basic textural classes of the USDA system as determined by the mass percentage of clay, silt, and sand size separates.}
     \label{fig:TexturalTriangle}
 \end{figure*}
+
+ \begin{tcolorbox}[enhanced,attach boxed title to top center={yshift=-3mm,yshifttext=-1mm},
+  colback=yellow!18!white,colframe=red!55!black,colbacktitle=red!65!black,
+  title=USDA 12 basic textural classes,fonttitle=\bfseries,
+  boxed title style={size=small,colframe=red!50!black} ]
+     Sand, Loamy Sand\\
+     Sandy Loam\\
+     Loam, Silt Loam, Silt\\
+     Clay Loam, Sandy Clay Loam, Silty Clay Loam\\ 
+     Clay, Sandy Clay, Silty Clay
+\end{tcolorbox}
     
 Loam is a soil textural class in which the sand, silt and clay fractions have a similar influence on soil properties, but are not in equal proportions.
     
@@ -177,27 +192,41 @@ Professional practitioners aim to determine the apparent textural class of the t
 
 \begin{figure*}
     \includegraphics[width=0.9\columnwidth]{images/Texture_by_feel_analysis_DecissionTree-12-Category-bw-72pxpin-576x733px.png}
-    \caption{Texture-by-Feel decision flow chart to determine one of the twelve Textural Classes. Note that Silt is not on the tree.}
+    \caption{Texture-by-Feel Analysis decision flow chart to determine one of the twelve basic textural classes. The resulting determination of a textural class would be said to be an "apparent texture". Note that Silt is not on the tree.}
     \label{fig:TextureByFeelFlowChart12}
 \end{figure*}
 
-It is common, frequent, and convenient to speak more broadly, generally, or more inclusively about classes of soil texture. Commonly employed is referring to soil materials as \textit{General texture groupings} of \textbf{sandy}, \textbf{loamy}, or \textbf{clayey}. Leveraging these General texture grouping in discussions the way in which these three terms are used determines if the term is a General texture grouping or a textural category from the twelve basic textural classes. This can initially be confusing to the uninitiated so when it doubt, ask, because a \textit{sandy, loamy, or clayey} soil materials reference is not the same as a \textit{sand, loam, or clay} textural class. Further, the \textit{General texture groups} are frequently referred to as five \textit{General texture subgroups}.
+It is common, frequent, and convenient to speak more broadly, generally, or more inclusively about classes of soil texture. Commonly employed is referring to soil materials as \textit{General texture groupings} of \textbf{sandy}, \textbf{loamy}, or \textbf{clayey}. When the three General texture grouping terms are used in discussion it is helpful to think about the way in which these three terms are used to guide if the term is a General texture grouping or a textural category from the twelve basic textural classes. This can initially be confusing to the uninitiated so when it doubt, ask, because a \textit{sandy, loamy, or clayey} soil materials reference–general textural grouping terms–is not the same as \textit{sand, loam, or clay} textural class terms from the twelve basic textural classes.
 
-As mentioned previously High School FFA Land Judging teams determine a textural class from the five category system. A modified decision tree is presented in Figure \ref{fig:TextureByFeelFlowChart5class}.
+ \begin{tcolorbox}[enhanced,attach boxed title to top center={yshift=-3mm,yshifttext=-1mm},
+  colback=yellow!18!white,colframe=red!55!black,colbacktitle=red!65!black,
+  title=USDA Groupings and Subgroupings,fonttitle=\bfseries,
+  boxed title style={size=small,colframe=red!50!black} ]
+     \textbf{Groupings}\\
+     Sandy, Loamy, and Clayey
+     \tcblower
+     \textbf{Subgroupings}\\
+     Coarse, Moderately Coarse, Medium, Moderately Fine, and Fine
+     
+\end{tcolorbox}
+
+When the term \textit{clayey} is employed it is not a basic textural class term, but it is a meaningful general textural grouping term. It is confusing to new learners when the general textural grouping terms such as clayey is used, but the term is employed widely and thus this presentation serves to alert the study and effective communication of soil physical properties and mastering terms promotes effective learning and communication.
+
+Post secondary High School FFA Land Judging teams determine a texture from the five general textural subgroup list for placing soils in a significantly simplified technical classification patterned after \textit{Land Capability Classification}. The \textit{general texture groups} are frequently further divided as five \textit{general texture subgroup(s)} and these general textural subgroup terms are also not the same as the basic textural classes. A modified decision tree to choose a subgroup term is presented in a texture-by-feel decision flow diagram Figure \ref{fig:TextureByFeelFlowChart5class}.
 
 \begin{figure*}
     \includegraphics[width=0.9\columnwidth]{images/Texture_by_feel_analysis_DecissionTree-5-Category-bw-72pxpin-576x737px.png}
-    \caption{Texture-by-Feel decision flow chart to determine one of the Textural Classes from the five class system.}
+    \caption{Texture-by-Feel decision flow chart to determine one of the five General Textural Subgroups.}
     \label{fig:TextureByFeelFlowChart5class}
 \end{figure*}
 
-When the term \csname{Clayey}\endcsname is employed it is not a textural class term. It is confusing to new learners when the class terms such as clayey is used, but the term is employed widely and thus this presentation this presentation.
+ High-school FFA Land Judgers learn and employ the five general texture \textit{subgroups} wherein \textbf{\textit{fine}} is the correct general textural subgrouping term for the twelve basic textural class categories of \textit{clay}, \textit{sandy clay}, and \textit{silty clay}. The term \textit{fine} and the general textural group term \textit{clayey} actually includes the same basic textural class categories \textit{clay}, \textit{sandy clay}, and \textit{silty clay}. Similarly, the \textit{sand} and \textit{loamy sand} classes from the twelve basic category system become \textbf{\textit{coarse}} from the general texture subgrouping, or \textit{sandy} from the general texture grouping. Figure \ref{fig:TextureClass12-5-3} depicts these relationships graphically.
 
- For instance high-school FFA Land Judgers learn and employ the five \textit{General texture subgroups} wherein \textbf{\textit{Fine}} is the correct textural class for the twelve class categories \textit{Clay}, \textit{Sandy Clay}, and \textit{Silty Clay} and this would be the same \textbf{\textit{Clayey}} from the three category textural class system. Similarly, the \textit{Sand} and \textit{Loamy Sand} classes from the twelve basic category system become \textbf{\textit{coarse}} from the General texture subcategory, or \textbf{\textit{Sandy}} from the General texture category. Figure \ref{fig:TextureClass12-5-3} depicts these relationships graphically.
 
+    
  \begin{figure*}
-    \includegraphics[width=0.9\columnwidth]{images/Textural_Classes_3-systems_bw-25pct-72pxpin-1013x1150px.png}
-    \caption{Diagram relating the twelve basic textural classes, the five General texture groups and the three General texture subgroups. The High School organization FFA uses the USDA five  general texture subgroups for their Carrier Development Events.}
+    \includegraphics[width=1.0\columnwidth]{images/Textural_Classes_et_groupings_labeled-600dpi.png}
+    \caption{Diagram relating the twelve basic textural classes, the five general texture subgroups and the three general texture groups.  The High School organization FFA uses the USDA five general texture subgroups for their Career Development Events.}
     \label{fig:TextureClass12-5-3}
 \end{figure*}
 
@@ -630,6 +659,7 @@ Porosity and bulk density are inversely related and can be related with maths as
 \begin{equation}
     \eta \, \frac{1}{\propto} \, \rho_b
 \end{equation}
+
 \begin{equation*}
     \begin{aligned}
         \text{where:}                                          \\
