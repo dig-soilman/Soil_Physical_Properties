@@ -32,10 +32,11 @@
 \usepackage[most]{tcolorbox}
 
 % begin paragraph formatting
-\usepackage{parskip}
-\setlength{\parindent}{0pt} % Default is 15pt thus no first line indent
+% \usepackage{parskip} % adds space between paragraphs
+% \setlength{\parindent}{0pt} % Default is 15pt thus no first line indent
+\setlength{\parindent}{15pt} % Set to 0pt for no first line indent
 %\setlength{\parskip}{2mm plus1mm minus1mm} % adds space between paragraphs
-\setlength{\parskip}{\baselineskip} % adds space between paragraphs
+% \setlength{\parskip}{\baselineskip} % adjusts added space between paragraphs
 % end paragraph formatting
 
 %==========================================================
@@ -63,7 +64,7 @@ The Soil Physical Properties by Donald G. McGahan is licensed under a \href{http
 
 \section*{Source code}
 
-If you are into LaTeX then you may be interested in the \href{https://github.com/dig-soilman/Soil_Physical_Properties.git}{repository}.
+If you are into LaTeX then you may be interested in the \href{https://github.com/dig-soilman/Soil_Physical_Properties.git}{repository} at https://github.com/dig-soilman/Soil\_Physical\_Properties.git.
 
 %
 \tableofcontents
@@ -189,7 +190,7 @@ Sand\% + Silt\% + Clay\% = 100\%
 \begin{figure*}
     \centering
     \includegraphics[width=0.98\columnwidth]{images/Textural_Triangle-wo-background.png}
-    \caption{Gibbs Triangle or commonly called a Textural Triangle depicting the twelve basic textural classes of the USDA system as determined by the mass percentage of clay, silt, and sand size separates.}
+    \caption{Gibbs Triangle or commonly called a Textural Triangle depicting the twelve basic textural classes of the USDA system as determined by the mass percentage of clay, silt, and sand size separates. Figure: Donald G. McGahan Creative Commons Attribution-ShareAlike-4.0-International.}
     \label{fig:TexturalTriangle}
 \end{figure*}
 
@@ -225,7 +226,7 @@ Professional practitioners aim to determine the apparent textural class of the t
 
 \begin{figure*}
 \includegraphics[width=0.98\columnwidth]{images/Texture_by_feel_analysis_DecissionTree-12-Category-bw-72pxpin-576x733px.png}
-\caption{Texture-by-Feel Analysis decision flow chart to determine one of eleven of the twelve basic textural classes. The resulting determination of a textural class would be said to be an "apparent texture". Note that Silt is the basic textural class not on the decision flow chart.} 
+\caption{Texture-by-Feel Analysis decision flow chart to determine one of eleven of the twelve basic textural classes. The resulting determination of a textural class would be said to be an "apparent texture". Note that Silt is the basic textural class not on the decision flow chart. Figure: Donald G. McGahan Creative Commons Attribution-ShareAlike-4.0-International.} 
 \label{fig:TextureByFeelFlowChart12}
 \end{figure*}
 % the above adaption figure has been adapted by others e.g. USDA-NRCS \href{https://www.nrcs.usda.gov/wps/portal/nrcs/detail/soils/edu/?cid=nrcs142p2_054311}{https://www.nrcs.usda.gov/wps/portal/nrcs/detail/soils/edu/?cid=nrcs142p2_054311} NOT SURE ABOUT attaining permissions.
@@ -380,7 +381,7 @@ When the term \textit{clayey} is employed it is not a basic textural class term,
 
  \begin{figure*}
     \includegraphics[width=0.98\columnwidth]{images/Texture_by_feel_analysis_DecissionTree-5-Category-bw-72pxpin-576x737px.png}
-    \caption{Texture-by-Feel decision flow chart to determine one of the five General Textural Subgroups.}
+    \caption{Texture-by-Feel decision flow chart to determine one of the five General Textural Subgroups. Figure: Donald G. McGahan Creative Commons Attribution-ShareAlike-4.0-International.}
     \label{fig:TextureByFeelFlowChart5class}
 \end{figure*}
 
@@ -393,14 +394,14 @@ High-school FFA Land Judgers and Homesite Judgers learn and employ the five gene
 \begin{figure*}
     \includegraphics[width=0.98\columnwidth]
        {images/Textural_Classes_et_groupings_labeled-600dpi.png}
-    \caption{Diagram relating the twelve basic textural classes, the five general texture subgroups and the three general texture groups. The High School organization FFA uses the USDA five general texture subgroups for their Career Development Events.}
+    \caption{Diagram relating the twelve basic textural classes, the five general texture subgroups and the three general texture groups. The High School organization FFA uses the USDA five general texture subgroups for their Career Development Events. Figure: Donald G. McGahan Creative Commons Attribution-ShareAlike-4.0-International.}
     \label{fig:TextureClass12-5-3}
 \end{figure*}
 
 \begin{figure}
     \centering
     \includegraphics[width=0.98\columnwidth]{images/Textural_Triangle-w-subgrouping.png}
-    \caption{The twelve basic textural class with color overlays corresponding to the five general textural subgroupings. These general textural subgroupings are used in FFA Land Evaluation and Homesite Career Development Events.}
+    \caption{The twelve basic textural class with color overlays corresponding to the five general textural subgroupings. These general textural subgroupings are used in FFA Land Evaluation and Homesite Career Development Events. Figure: Donald G. McGahan Creative Commons Attribution-ShareAlike-4.0-International.}
     \label{fig:textureTriangleWithsubgroupingOverlay}
 \end{figure}
 
@@ -672,7 +673,7 @@ It can be challenging to determine the $V_v$ when the relative proportions of $V
  \begin{figure}
      \centering
      \includegraphics[width=0.75\columnwidth]{images/TallBox-ideal-soil-volume.png}
-     \caption{Illustration of "idealized" soil volume occupied by voids and solids. The void volume is divided between air and water. The mass relationship is dominated by solids due to there greater density. Air contributes very little mass compared to water and solids.}
+     \caption{Illustration of "idealized" soil volume occupied by voids and solids. The void volume is divided between air and water. The mass relationship is dominated by solids due to there greater density. Air contributes very little mass compared to water and solids. Figure: Donald G. McGahan Creative Commons Attribution-ShareAlike-4.0-International.}
      \label{fig:idealizedsoilvolumne}
  \end{figure}
 
@@ -739,11 +740,11 @@ Porosity and bulk density are inversely related and can be related with maths as
 
 Decreasing bulk density promotes porosity. The pores are the voids between the solids that can contain air and or water. Biologicals in the soil rely on water stored their and aerobic organisms rely of the air composition.
 
+When discussing pores it is frequently useful to group pores by the classes of void diameter(s) where macro- is applied to voids with a diameter greater than \num{> 0.075}{mm} and meso- or micro- having a diameter \num{< 0.075}{mm}. As stated, the use of void diameters is useful because water and air move relatively rapidly through the voids connected together that are effectively macropores and much slower through smaller voids connected together that are effectively termed meso- or micropores. Still, the continuity of void diameter in soil are generally not linear and inter-connectivity between varying diameter voids impacts the movement of the fluids: air and water. Consider that when a grouping of connected macrovoids has a section of microvoids the microvoid section would constrain movement of water or air.
+
 % dig-soilman: The following passage within the \textit{} refers another treatise that is not part of this treatise for addressing water in soils.
 
-Though the porosity is generally greater in a clay soil than a sand soil, the average cross-section diameter of sandy soil matrix voids connected as pores are generally greater than the average cross-section diameter of clay soils. Thus, water and air flow more rapidly through sandy soils and more slowly through soils high in clay despite the greater overall porosity in clay soils. This is owing to the interaction of these fluids and the solids surfaces. \textit{For more on fluid interaction with solids seek a the treatise of soil climate or water in soils.}
-
-When discussing pores it is frequently useful to group pores by the classes of void diameter(s) where macro- is applied to voids with a diameter greater than \num{> 0.075}{mm} and meso- or micro- having a diameter \num{< 0.075}{mm}. As stated, the use of void diameters is useful because water and air move relatively rapidly through the voids connected together that are effectively macropores and much slower through smaller voids connected together that are effectively termed meso- or micropores. Still, the continuity of void diameter in soil are generally not linear and inter-connectivity between varying diameter voids impacts the movement of the fluids: air and water. Consider that when a grouping of connected macrovoids has a section of microvoids the microvoid section would constrain movement of water or air.
+Porosity alone is insufficient to fully understand fluid movement in soils but coupling with textural class increases what can be inferred. Though the porosity is generally greater in a clay soil than a sand soil. But the average cross-section diameter of sandy soil matrix voids connected as pores are generally greater than the average cross-section diameter of clay soils. Thus, water and air flow more rapidly through sandy soils and more slowly through soils high in clay despite the greater overall porosity associated with the increase in content of clay in a soil. This is owing to the interaction of these fluids and the solids surfaces. \textit{For more on fluid interaction with solids seek a the treatise of soil climate and/or water in soils.}
 
 In the preceding discussion voids and pores are defined separately. Pores can also be grouped into  general types in keeping with the types of voids. Interparticle pores are the connected void spaces occurring between the individual soil particles. Interaggregate pores are the connected void space occurring between soil aggregates. Biopores are pores created by biological activity (e.g., roots and earthworms).
 
