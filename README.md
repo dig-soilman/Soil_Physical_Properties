@@ -1,12 +1,12 @@
 # Soil Physical Properties
 
-Is a Open Educational Resource treatise introducing and briefly describing physical properties of soils. It emphasizes examples to quantify the soil and gives examples of classing several measurments to better understand how to employ soil as a precious natural resource for productivity and conservation.
+Is a Open Educational Resource treatise introducing, and briefly describing, physical properties of soils. It emphasizes examples to quantify the soil and gives examples of classing several measurments to better understand how to employ soil as a precious natural resource for productivity and conservation.
 
 This treatise is envisioned to be parterned with other treatises of a more complete post secondary upper division treatment introducing a broader spectrum of the science of soil. Currently, a proposed title of the greater work is **Start with Soil**. 
 
 Candidate topics for the proposed **Start with Soil** book rely on a fundamental knowledge of the physical properties of soils to fully leverage said additional topics of interest.
 
-***This treatise is beta and is under active edits and revisions. As such, I cannot suggest that it be employed/deployed as a teaching resource YET.***
+***This treatise is beta and is under active edits and revisions. As such, I expect corrections active in August and September 2022.***
 
 ## Source code
 
