@@ -12,7 +12,7 @@ Candidate topics for the proposed **Start with Soil** book rely on a fundamental
 
 The book source code is LaTeX and is available in the repository.
 
-One use of the source when this gets out of beta is for instructors to make small adjustments for their class, such as adding an exercise or a special topic. Feel free to contribute with suggested edits and additions, but please also include a statement so that people know who to write with bug reports. Put something like this on the cover: \fbox{\parbox{0.75\textwidth}{The appendix on Darcy's Law has been added by Professor Fellow of UCD. For this material contact \url{fellow@example.edu}.}}
+One use of the source when this gets out of beta is for instructors to make small adjustments for their class, such as adding an exercise or a special topic. Feel free to contribute with suggested edits and additions, but please also include a statement so that people know who to write with bug reports. Put something like this on the docuent cover: \fbox{\parbox{0.75\textwidth}{The appendix on Darcy's Law has been added by Professor Fellow of University. For this material contact \url{fellow@example.edu}.}}
 
 Additionally, in the LaTeX code adding 
 
