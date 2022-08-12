@@ -8,6 +8,10 @@ Candidate topics for the proposed **Start with Soil** book rely on a fundamental
 
 ***This treatise is beta and is under active edits and revisions. As such, I expect corrections active in August and September 2022.***
 
+## PDF
+
+Select the file and choose to read or download the file. The version is at the end of the file name durring the active edit period.
+
 ## Source code
 
 The book source code is LaTeX and is available in the repository.
