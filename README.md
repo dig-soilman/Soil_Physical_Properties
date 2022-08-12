@@ -14,11 +14,12 @@ Select the greatest number beta version file name. Choose to read or Download th
 
 ## Source code
 
-The book source code is LaTeX and is available in the repository.
+The book source code–without a version number–is LaTeX and is also available in the repository for inspection.
 
-One use of the source when this gets out of beta is for instructors to make small adjustments for their class, such as adding an exercise or a special topic. Feel free to contribute with suggested edits and additions, but please also include a statement so that people know who to write with bug reports. Put something like this on the docuent cover: \fbox{\parbox{0.75\textwidth}{The appendix on Darcy's Law has been added by Professor Fellow of University. For this material contact \url{fellow@example.edu}.}}
+One use of the source is for instructors to make small adjustments for their class, such as adding or excluding a topic. 
+Feel free to contribute with suggested edits and additions, but please also include a comment statement with contact information so that other collaborators know who to write with bug reports.
 
-Additionally, in the LaTeX code adding 
+---
 
 % dig-soilman begin addtion
 
@@ -26,7 +27,9 @@ Additionally, in the LaTeX code adding
    
 % dig-soilman end addtion
 
-The LaTex has some comments and ToDo's as well as some commented Markdown for tables.
+---
+
+The LaTex currently has some comments and ToDo's as well as some commented Markdown for tables to ease transition to other markup languages.
 
 ## License
 
