@@ -10,7 +10,7 @@ Candidate topics for the proposed **Start with Soil** book rely on a fundamental
 
 ## PDF
 
-Select the file and choose to read or download the file. The version is at the end of the file name durring the active edit period.
+Select the greatest number beta version file name. Choose to read or Download the file. Example Soil_Physical_Properties_beta0.7.1.pdf. The version is at the end of the file name durring the active edit period.
 
 ## Source code
 
