@@ -1,10 +1,10 @@
 
 \documentclass[letterpaper]{article}
-%\usepackage[utf8]{inputenc}
+\usepackage[utf8]{inputenc}
 \usepackage[inner=4.67cm, outer=3.33cm, top=2.54cm, bottom=3cm]{geometry} 
 \usepackage[english]{babel}
 \usepackage[autostyle]{csquotes}
-\usepackage{svg}
+\usepackage{svg} % allows use of svg graphics
 \usepackage{amsmath} % provides miscellaneous enhancements for improving the information structure and printed output of documents containing mathematical formulas 
 \usepackage{amsfonts,amssymb} % amssymb provides an extended symbol collection and internally loads amsfonts Computer Modern font plus a set of miscellaneous TeX fonts that augment the standard Computer Modern set
 \usepackage{hyperref}
@@ -29,6 +29,7 @@
 \usepackage[skip=0.5\baselineskip]{caption} % allows addition of space after the caption and prior to the table
 \usepackage{tikz,lmodern}
 \usepackage[most]{tcolorbox}
+% \usepackage[toc]{appendix} % un-comment if using TOC and want appendix items to show in TOC
 
 %================================================
 % begin paragraph formatting if no first line indent and space between
@@ -946,6 +947,15 @@ Violently effervescent      & Bubbles quickly form a thick foam \\
 % 	effectiveness. Consequently dig-soilman favors NOT adding study
 % 	questions directly to the end of the document and instead expects
 % 	instructors leveraging the document to create there own.
+
+% 
+% ======================Activate the appendix========================
+% from now on sections are numerated with capital letters
+\appendix
+
+%\section{Test 3}
+%\section{Test 3}
+%================end appendix material=========
 
 \newpage
 \quad % without \quad no new page would be inserted!!!
