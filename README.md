@@ -6,7 +6,7 @@ This treatise is envisioned to be parterned with other treatises of a more compl
 
 Candidate topics for the proposed **Start with Soil** book rely on a fundamental knowledge of the physical properties of soils to fully leverage said additional topics of interest.
 
-***This treatise is beta and is under active edits and revisions. As such, I expect corrections active in August and September 2022.***
+***This treatise is beta and is under active edits and revisions. As such, I expect corrections active in 2022, 2023, and 2024.***
 
 ## PDF
 
